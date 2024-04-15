@@ -70,3 +70,15 @@
       - **Engage in TYPO3 Forums and Discussions**
         - [TYPO3 Community
 
+Resources:
+   - TYPO3 Official Website
+   - https://docs.typo3.org/
+   - https://www.youtube.com/@typo3
+   - https://www.youtube.com/@sherifss
+   - https://www.youtube.com/@LiquidLightDigital
+   - https://www.youtube.com/@T3Campus
+   - https://www.youtube.com/@ytHUNTR
+   - https://www.youtube.com/@Falconbyte
+   - https://www.youtube.com/@wolfgangwagnerlive
+   - https://www.youtube.com/@stefanfromken6613/playlists
+   - https://www.youtube.com/@NaderiosTNT/playlists
