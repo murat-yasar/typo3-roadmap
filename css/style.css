@@ -103,7 +103,7 @@ h1 {
 }
 
 /* Remove margins and padding from the parent ul */
-#editor {
+.up-list {
   margin: 0;
   padding: 0;
 }

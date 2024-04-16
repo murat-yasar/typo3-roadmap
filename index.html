@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>TYPO3 Roadmap</title>
 </head>
 <body>
@@ -33,7 +33,7 @@
       <span onclick="this.parentElement.style.display='none'" class="close">&times</span>
       <h2><i class="fa fa-globe"></i> Editor</h2>
 
-      <ul id="editor">
+      <ul class="up-list">
         <li><span class="caret"><strong class="part">1. CMS Basics</strong></span>
           <ul class="nested">
             <li><span class="caret"><strong class="topic">About a CMS</strong></span>
@@ -140,7 +140,7 @@
         </li>
       </ul>
 
-      <ul id="editor">
+      <ul class="up-list">
         <li><span class="caret"><strong class="part">2. TYPO3 Basics</strong></span>
           <ul class="nested">
             <li><span class="caret">CMS</span>
@@ -157,7 +157,7 @@
           </ul>
         </li>
       </ul>
-      <ul id="editor">
+      <ul class="up-list">
         <li><span class="caret"><strong class="part">3. TYPO3 Handling</strong></span>
           <ul class="nested">
             <li><span class="caret">CMS</span>
@@ -174,7 +174,7 @@
           </ul>
         </li>
       </ul>
-      <ul id="editor">
+      <ul class="up-list">
         <li><span class="caret"><strong class="part">4. Media Management</strong></span>
           <ul class="nested">
             <li><span class="caret">CMS</span>
@@ -191,7 +191,7 @@
           </ul>
         </li>
       </ul>
-      <ul id="editor">
+      <ul class="up-list">
         <li><span class="caret"><strong class="part">5. Target Group Optimization</strong></span>
           <ul class="nested">
             <li><span class="caret">CMS</span>
@@ -220,227 +220,395 @@
       <span onclick="this.parentElement.style.display='none'" class="close">&times</span>
       <h2><i class="fa fa-globe"></i> Developer</h2>
 
-      <ul id="developer">
-        <li><span class="caret"><strong class="part">1. Software Architecture for Extensions
-        </strong></span>
+      <ul class="up-list">
+        <li><span class="caret"><strong class="part">1. Software Architecture for Extensions</strong></span>
           <ul class="nested">
-            <li><span class="caret">CMS</span>
+            <li><span class="caret">What is MVC?</span>
+              <!-- <p>The MVC pattern, what it can be used for, and common implementations.</p> -->
               <ul class="nested">
-                <li><span class="caret">Topic</span>
-                  <ul class="nested">
-                    <li><input type="checkbox"> item</li>
-                    <li><input type="checkbox"> item</li>
-                    <li><input type="checkbox"> item</li>
-                  </ul>
-                </li>
+                <li><input type="checkbox" > I have a basic understanding of what MVC is</li>
+              </ul>
+            </li>
+            <li><span class="caret">What is a Templating Engine?</span>
+              <!-- <p>Introduction to the basic concept of a templating engine/processor.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can explain what the basic concept of a templating engine is</li>
+                <li><input type="checkbox" > I can identify needed parts for a templating engine.</li>
+              </ul>
+            </li>
+            <li><span class="caret">PSR Standards</span>
+              <!-- <p>Knowing the most important PSR programming standards in the TYPO3 world</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what PSR is</li>
+                <li><input type="checkbox" > I know the topics the most important standards cover</li>
+              </ul>
+            </li>
+            <li><span class="caret">Domain-Driven Design (DDD)</span>
+              <!-- <p>Understanding the concept of DDD</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know the concept, its purposes and main points</li>
+                <li><input type="checkbox" > I know where to find information to learn more</li>
+              </ul>
+            </li>
+            <li><span class="caret">PHP</span>
+              <!-- <p>Ability to develop and execute PHP scripts</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to execute PHP scripts in my local environment</li>
+                <li><input type="checkbox" > I know how PHP is executed by a web server</li>
+                <li><input type="checkbox" > I can develop functionality in PHP</li>
+              </ul>
+            </li>
+            <li><span class="caret">Model</span>
+              <!-- <p>This skill covers the model in the MVC context</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know which role models play in the software architectural pattern MVC.</li>
+              </ul>
+            </li>
+            <li><span class="caret">View Pattern</span>
+              <!-- <p>What is a view in MVC context</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know which role the view plays in the pattern</li>
+              </ul>
+            </li>
+            <li><span class="caret">PSR-14: Event Dispatching</span>
+              <!-- <p>This skill covers the basics of the PHP standard on Event dispatching</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know the four use cases of events specified by PSR-14</li>
+                <li><input type="checkbox" > I know about the different components of a PSR-14-compliant event system (Listener, Emitter, Dispatcher, ListenerProvider)</li>
+                <li><input type="checkbox" > I know when mutable or immutable events should be used.</li>
+              </ul>
+            </li>
+            <li><span class="caret">Dependency Injection</span>
+              <!-- <p>Knowledge about dependency injection in general</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I understand the concept of dependency injection, its benefits and limitations</li>
+                <li><input type="checkbox" > I know when dependency injection should be used</li>
+              </ul>
+            </li>
+            <li><span class="caret">The builder design pattern in TYPO3</span>
+              <!-- <p>TYPO3 provides some concrete classes following the Builder design pattern</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know the different TYPO3 builder implementations</li>
+                <li><input type="checkbox" > I can use the different TYPO3 builder implementations.</li>
+              </ul>
+            </li>
+            <li><span class="caret">Builder design pattern</span>
+              <!-- <p>Understanding the “Builder” Design Pattern</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know the Builder Pattern and what it entails</li>
+                <li><input type="checkbox" > I know how to retrieve or create new instances of a builder</li>
+                <li><input type="checkbox" > I know how to re-use and not re-use builder instances</li>
+              </ul>
+            </li>
+            <li><span class="caret">Software Design Patterns</span>
+              <!-- <p>This skill covers Software Design Patterns, established solutions for repeated problems in software development</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what Design Patterns are and why they are useful</li>
+                <li><input type="checkbox" > I know examples of Design Patterns used in TYPO3</li>
+                <li><input type="checkbox" > I know when to apply Design Patterns in my own code</li>
               </ul>
             </li>
           </ul>
         </li>
       </ul>
 
-      <ul id="developer">
+      <ul class="up-list">
         <li><span class="caret"><strong class="part">2. Templating and Other Outputs</strong></span>
           <ul class="nested">
-            <li><span class="caret">CMS</span>
+            <li><span class="caret">Topic</span>
+              <p></p>
               <ul class="nested">
-                <li><span class="caret">Topic</span>
-                  <ul class="nested">
-                    <li><input type="checkbox"> item</li>
-                    <li><input type="checkbox"> item</li>
-                    <li><input type="checkbox"> item</li>
-                  </ul>
-                </li>
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+              </ul>
+            </li>
+            <li><span class="caret">Topic</span>
+              <p></p>
+              <ul class="nested">
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+              </ul>
+            </li>
+            <li><span class="caret">Topic</span>
+              <p></p>
+              <ul class="nested">
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+              </ul>
+            </li>
+            <li><span class="caret">Topic</span>
+              <p></p>
+              <ul class="nested">
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+              </ul>
+            </li>
+            <li><span class="caret">Topic</span>
+              <p></p>
+              <ul class="nested">
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+              </ul>
+            </li>
+            <li><span class="caret">Topic</span>
+              <p></p>
+              <ul class="nested">
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+              </ul>
+            </li>
+            <li><span class="caret">Topic</span>
+              <p></p>
+              <ul class="nested">
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+              </ul>
+            </li>
+            <li><span class="caret">Topic</span>
+              <p></p>
+              <ul class="nested">
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+              </ul>
+            </li>
+            <li><span class="caret">Topic</span>
+              <p></p>
+              <ul class="nested">
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+              </ul>
+            </li>
+            <li><span class="caret">Topic</span>
+              <p></p>
+              <ul class="nested">
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+              </ul>
+            </li>
+            <li><span class="caret">Topic</span>
+              <p></p>
+              <ul class="nested">
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+              </ul>
+            </li>
+            <li><span class="caret">Topic</span>
+              <p></p>
+              <ul class="nested">
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
               </ul>
             </li>
           </ul>
         </li>
       </ul>
 
-      <ul id="developer">
+      <ul class="up-list">
         <li><span class="caret"><strong class="part">3. Care Architecture & APIs</strong></span>
           <ul class="nested">
-            <li><span class="caret">CMS</span>
+            <li><span class="caret">Topic</span>
+              <p></p>
               <ul class="nested">
-                <li><span class="caret">Topic</span>
-                  <ul class="nested">
-                    <li><input type="checkbox"> item</li>
-                    <li><input type="checkbox"> item</li>
-                    <li><input type="checkbox"> item</li>
-                  </ul>
-                </li>
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
               </ul>
             </li>
           </ul>
         </li>
       </ul>
 
-      <ul id="developer">
+      <ul class="up-list">
         <li><span class="caret"><strong class="part">4. General Extension Architecture</strong></span>
           <ul class="nested">
-            <li><span class="caret">CMS</span>
+            <li><span class="caret">Topic</span>
+              <p></p>
               <ul class="nested">
-                <li><span class="caret">Topic</span>
-                  <ul class="nested">
-                    <li><input type="checkbox"> item</li>
-                    <li><input type="checkbox"> item</li>
-                    <li><input type="checkbox"> item</li>
-                  </ul>
-                </li>
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
               </ul>
             </li>
           </ul>
         </li>
       </ul>
 
-      <ul id="developer">
+      <ul class="up-list">
         <li><span class="caret"><strong class="part">5. Software Quality</strong></span>
           <ul class="nested">
-            <li><span class="caret">CMS</span>
+            <li><input type="checkbox" > <span class="caret">Coding Standards in TYPO3</span>
+              <!-- <p>Knowing how to write code conforming to the coding standards used by the TYPO3 project.</p> -->
               <ul class="nested">
-                <li><span class="caret">Topic</span>
-                  <ul class="nested">
-                    <li><input type="checkbox"> item</li>
-                    <li><input type="checkbox"> item</li>
-                    <li><input type="checkbox"> item</li>
-                  </ul>
-                </li>
+                <li><input type="checkbox" > I am familiar with the PSR standard and the usage in TYPO3</li>
+                <li><input type="checkbox" > I know the TYPO3 namespace conventions</li>
+                <li><input type="checkbox" > I know the official TYPO3 coding guidelines for PHP, JavaScript, etc</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Docblocks in PHP</span>
+              <!-- <p>The syntax and general purpose of documentation blocks, and the most often used annotations.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how PHPDoc blocks look and I know the general purpose and limitations</li>
+                <li><input type="checkbox" > I can write valid annotations</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Performance analysis for custom code</span>
+              <!-- <p>This skill covers the process of analysing performance of a TYPO3 system.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know common performance metrics</li>
+                <li><input type="checkbox" > I know how to analyze the performance of a TYPO3 site</li>
+                <li><input type="checkbox" > I know how to analyze the performance of my custom plugins</li>
+                <li><input type="checkbox" > I know where to get a first overview of the rendering performance</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">PHP Code Style Tools</span>
+              <!-- <p>This skill covers tools for automatic code formatting in PHP.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know about standard tools for code formatting in PHP</li>
+                <li><input type="checkbox" > I know how to use the tools</li>
+                <li><input type="checkbox" > I know how to integrate the tools into workflows like CI Pipelines</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Static code analysis</span>
+              <!-- <p>Developing and maintaining large code bases can be cumbersome. Tools providing static code analysis can help.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what static code analysis is and why it is useful</li>
+                <li><input type="checkbox" > I know how to integrate static analysis tools into workflows</li>
+                <li><input type="checkbox" > I know some popular and widely used static analysis tools for PHP</li>
               </ul>
             </li>
           </ul>
         </li>
       </ul>
 
-      <ul id="developer">
+      <ul class="up-list">
         <li><span class="caret"><strong class="part">6. Building Plugins/Modules with Extbase</strong></span>
           <ul class="nested">
-            <li><span class="caret">CMS</span>
+            <li><span class="caret">Topic</span>
+              <p></p>
               <ul class="nested">
-                <li><span class="caret">Topic</span>
-                  <ul class="nested">
-                    <li><input type="checkbox"> item</li>
-                    <li><input type="checkbox"> item</li>
-                    <li><input type="checkbox"> item</li>
-                  </ul>
-                </li>
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
+                <li><input type="checkbox" > item</li>
               </ul>
             </li>
           </ul>
         </li>
       </ul>
 
-      <ul id="developer">
+      <ul class="up-list">
         <li><span class="caret"><strong class="part">7. Security</strong></span>
           <ul class="nested">
             <li>
-              <input type="checkbox"> <span class="caret">Handling User Input: </span> Knowledge about possible ways to retrieve and process user input.
+              <input type="checkbox"> <span class="caret">Handling User Input: </span> 
+              <!-- <p>Knowledge about possible ways to retrieve and process user input.</p> -->
               <ul class="nested">
-                <li><input type="checkbox"> I know how to access the arguments and values of a URL.</li>
-                <li><input type="checkbox"> I know how to access data passed into the system from forms.</li>
-                <li><input type="checkbox"> I know how to retrieve data from third-party systems.</li>
-                <li><input type="checkbox"> I know the typical security risks when user input is accessed/processed.</li>
+                <li><input type="checkbox" > I know how to access the arguments and values of a URL.</li>
+                <li><input type="checkbox" > I know how to access data passed into the system from forms.</li>
+                <li><input type="checkbox" > I know how to retrieve data from third-party systems.</li>
+                <li><input type="checkbox" > I know the typical security risks when user input is accessed/processed.</li>
               </ul>
             </li>
             <li><input type="checkbox"> <span class="caret">User Input in DB Queries</span>
+              <!-- <p>Knowledge about securely processing user input for database queries.</p> -->
               <ul class="nested">
-                <li><input type="checkbox"> item</li>
-                <li><input type="checkbox"> item</li>
-                <li><input type="checkbox"> item</li>
+                <li><input type="checkbox" > I know what an SQL injection is</li>
+                <li><input type="checkbox" > I know how to sanitize user input to prevent SQL injections</li>
+                <li><input type="checkbox" > I know what other measures to take against SQL injections</li>
               </ul>
             </li>
             <li><input type="checkbox"> <span class="caret">User Input in Views</span>
+              <!-- <p>Knowledge about securely outputting values gained through user input.</p> -->
               <ul class="nested">
-                <li><input type="checkbox"> item</li>
-                <li><input type="checkbox"> item</li>
-                <li><input type="checkbox"> item</li>
+                <li><input type="checkbox" > I know what cross-site scripting (XSS) is</li>
+                <li><input type="checkbox" > I know how to prevent user input from triggering XSS</li>
               </ul>
             </li>
             <li><input type="checkbox"> <span class="caret">User Input in PHP Code</span>
+              <!-- <p>Knowledge about securely processing user input in PHP code.</p> -->
               <ul class="nested">
-                <li><input type="checkbox"> item</li>
-                <li><input type="checkbox"> item</li>
-                <li><input type="checkbox"> item</li>
+                <li><input type="checkbox" > I know about vulnerabilities path traversal, arbitrary code execution and information disclosure</li>
+                <li><input type="checkbox" > I can apply mitigations to prevent these vulnerabilities.</li>
               </ul>
             </li>
             <li><input type="checkbox"> <span class="caret">Web Vulnerability Types</span>
+              <!-- <p>Knowledge about possible vulnerabilities in web development.</p> -->
               <ul class="nested">
-                <li><input type="checkbox"> item</li>
-                <li><input type="checkbox"> item</li>
-                <li><input type="checkbox"> item</li>
+                <li><input type="checkbox" > I know what cross-site scripting (XSS) is</li>
+                <li><input type="checkbox" > I know what arbitrary code execution is</li>
+                <li><input type="checkbox" > I know what an SQL injection is</li>
+                <li><input type="checkbox" > I know how I can prevent these vulnerabilities in my code</li>
               </ul>
             </li>
             <li><input type="checkbox"> <span class="caret">Prepared Statements</span>
+              <!-- <p>This skill covers the concept of Prepared Statements in relational databases.</p> -->
               <ul class="nested">
-                <li><input type="checkbox"> item</li>
-                <li><input type="checkbox"> item</li>
-                <li><input type="checkbox"> item</li>
+                <li><input type="checkbox" > I know what prepared statements are and what their purpose is</li>
+                <li><input type="checkbox" > I know how they improve security and against which attack vectors they  are useful</li>
               </ul>
             </li>
             <li><input type="checkbox"> <span class="caret">Content Security Policy in Extensions</span>
+              <!-- <p>This skill covers the usage and configuration of CSP in TYPO3 Extension.</p> -->
               <ul class="nested">
-                <li><input type="checkbox"> item</li>
-                <li><input type="checkbox"> item</li>
-                <li><input type="checkbox"> item</li>
+                <li><input type="checkbox" > I know how to configure CSP via PHP</li>
+                <li><input type="checkbox" > I know how to integrate assets in a CSP conform way</li>
+                <li><input type="checkbox" > I know to make use of 3rd Party assets in a CSP conform way</li>
               </ul>
             </li>
           </ul>
         </li>
       </ul>
 
-      <ul id="developer">
+      <ul class="up-list">
         <li><span class="caret"><strong class="part">8. Package Management</strong></span>
           <ul class="nested">
             <li>
               <input type="checkbox" checked> <span class="caret">Composer</span>
-              <p>Composer basics and its usage for PHP projects.</p>
+              <!-- <p>Composer basics and its usage for PHP projects.</p> -->
               <ul class="nested">
-                <li><span class="caret">I know</span>
-                  <ul class="nested">
-                    <li><input type="checkbox"> what Composer is</li>
-                    <li><input type="checkbox"> the purpose and the structure of file composer.json</li>
-                    <li><input type="checkbox"> what composer.lock is and which purpose it serves</li>
-                    <li><input type="checkbox"> the difference between the install and the update command</li>
-                  </ul>
-                </li>
-                <li><span class="caret">I can</span>
-                  <ul class="nested">
-                    <li><input type="checkbox"> create a new Composer project</li>
-                    <li><input type="checkbox"> specify requirements for my project</li>
-                    <li><input type="checkbox"> install packages using Composer</li>
-                    <li><input type="checkbox"> update packages</li>
-                    <li><input type="checkbox"> remove packages</li>
-                  </ul>
-                </li>
+                <li><input type="checkbox" > I know what Composer is</li>
+                <li><input type="checkbox" > I know the purpose and the structure of file composer.json</li>
+                <li><input type="checkbox" > I know what composer.lock is and which purpose it serves</li>
+                <li><input type="checkbox" > I know the difference between the install and the update command</li>
+                <li><input type="checkbox" > I can create a new Composer project</li>
+                <li><input type="checkbox" > I can specify requirements for my project</li>
+                <li><input type="checkbox" checked> I can install packages using Composer</li>
+                <li><input type="checkbox" checked> I can update packages</li>
+                <li><input type="checkbox" checked> I can remove packages</li>
               </ul>
             </li>
           </ul>
         </li>
       </ul>
-      <ul id="developer">
+
+      <ul class="up-list">
         <li><span class="caret"><strong class="part">9. Server Management</strong></span>
           <ul class="nested">
             <li>
-              <input type="checkbox" checked> <span class="caret">Git basics</span>
-              <p>Basics and most important commands for working with the version-control system Git.</p>
+              <input type="checkbox" checked> <span class="caret"> Git basics</span>
+              <!-- <p>Basics and most important commands for working with the version-control system Git.</p> -->
               <ul class="nested">
-                <li><span class="caret">I know</span>
-                  <ul class="nested">
-                    <li><input type="checkbox"> what a VCS is</li>
-                    <li><input type="checkbox"> what a branch is</li>
-                    <li><input type="checkbox"> what a tag is</li>
-                    <li><input type="checkbox"> what a repository is</li>
-                    <li><input type="checkbox"> what a merge is</li>
-                  </ul>
-                </li>
-                <li><span class="caret">I can</span>
-                  <ul class="nested">
-                    <li><input type="checkbox"> initialize a Git repository</li>
-                    <li><input type="checkbox"> execute commands "commit", "push" and "pull"</li>
-                    <li><input type="checkbox"> create a branch and work on it</li>
-                    <li><input type="checkbox"> assign a tag to a certain development state</li>
-                    <li><input type="checkbox"> merge code</li>
-                  </ul>
-                </li>
+                <li><input type="checkbox" checked> I know what a VCS is</li>
+                <li><input type="checkbox" checked> I know what a branch is</li>
+                <li><input type="checkbox" checked> I know what a tag is</li>
+                <li><input type="checkbox" checked> I know what a repository is</li>
+                <li><input type="checkbox" checked> I know what a merge is</li>
+                <li><input type="checkbox" checked> I can initialize a Git repository</li>
+                <li><input type="checkbox" checked> I can execute commands "commit", "push" and "pull"</li>
+                <li><input type="checkbox" checked> I can create a branch and work on it</li>
+                <li><input type="checkbox" checked> I can assign a tag to a certain development state</li>
+                <li><input type="checkbox" checked> I can merge code</li>
               </ul>
             </li>
           </ul>
@@ -513,6 +681,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" ></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" ></script>
-  <script src="/js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
