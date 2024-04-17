@@ -325,6 +325,9 @@
               <p>description</p>
               <ul class="nested">
                 <li><input type="checkbox" > Item</li>
+                <li><input type="checkbox" > Item</li>
+                <li><input type="checkbox" > Item</li>
+                <li><input type="checkbox" > Item</li>
               </ul>
             </li>
           </ul>
@@ -505,12 +508,173 @@
         </li>
       </ul>
       <ul class="up-list">
-        <li><span class="caret"><strong class="part">9. Templating and Other Outputs</strong> 20</span>
+        <li><span class="caret"><strong class="part">9. Templating and Other Outputs</strong></span>
           <ul class="nested">
-            <li><input type="checkbox" > <span class="caret">Topic</span>
-              <p>description</p>
+            <li><input type="checkbox" > <span class="caret">What is Fluid?</span>
+              <!-- <p>Definition of Fluid and its possible use with regards to the Model View Controller pattern.</p> -->
               <ul class="nested">
-                <li><input type="checkbox" > Item</li>
+                <li><input type="checkbox" > I can explain what Fluid is. </li>
+                <li><input type="checkbox" > I can define its role in the context of a MVC system. </li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Outputting Variables</span>
+              <!-- <p>Basic usage of variables inside Fluid templates and knowledge about escaping.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can find out which variables are passed to a Fluid view.</li>
+                <li><input type="checkbox" > I can output variables with the according path syntax.</li>
+                <li><input type="checkbox" > I know how Fluid escapes variable output in templates.</li>
+                <li><input type="checkbox" > I know how to disable escaping of variables.</li>
+                <li><input type="checkbox" > I also know which security risks (XSS) may occure, when disable escaping of variables.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">ViewHelpers</span>
+              <!-- <p>Getting to know what a ViewHelper is.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what ViewHelpers are.</li>
+                <li><input type="checkbox" > I know what a Namespace is.</li>
+                <li><input type="checkbox" > I can use ViewHelpers in my template.</li>
+                <li><input type="checkbox" > I know which ViewHelpers are shipped by stand-alone Fluid, and which are provided by TYPO3 CMS.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Templates, Layouts, Partials</span>
+              <!-- <p>Fluid Templates, Layouts, Partials - their interaction and properties.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what Fluid Templates are</li>
+                <li><input type="checkbox" > I know what Fluid Layouts are</li>
+                <li><input type="checkbox" > I know what Fluid Partials are</li>
+                <li><input type="checkbox" > I know ow Templates, Layouts and Partials are connected</li>
+                <li><input type="checkbox" > I can structure Templates, Layouts and Partials</li>
+                <li><input type="checkbox" > I can combine Templates, Layouts and Partials for templating</li>
+                <li><input type="checkbox" > I can use Templates, Layouts and Partials to realise a specific template example</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">ViewHelper: Comment</span>
+              <!-- <p>Including comments in Fluid templates.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to include Fluid comments in my templates.</li>
+                <li><input type="checkbox" > I know the difference between HTML comments and Fluid comments regarding the rendered HTML output.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">ViewHelper: If/Else</span>
+              <!-- <p>Creating if/else statements within Fluid templates.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can create an if/else statement in my templates with the help of the according Fluid ViewHelper.</li>
+                <li><input type="checkbox" > I can apply conditions using the inline notation of Fluid.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">ViewHelper: For-Loop</span>
+              <!-- <p>Iterating through a list with the for ViewHelper.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to cycle through items with the help of the for ViewHelper inside my Fluid templates.</li>
+                <li><input type="checkbox" > I also know how to utilize the iteration object within a cycle.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Importing ViewHelpers</span>
+              <!-- <p>Using third party ViewHelpers in your Fluid templates.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can include third party ViewHelpers in my Fluid templates.</li>
+                <li><input type="checkbox" > I know that a TYPO3 Developer can build custom ViewHelpers</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">ViewHelper: Render</span>
+              <!-- <p>Using f:render to render sections and partials as well as passing arguments.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can use f:render in my templates to render sections and partials.</li>
+                <li><input type="checkbox" > I can pass arguments (along with optional flagging).</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Using the Fluid View</span>
+              <!-- <p>Knowing and understanding the different parts of a Fluid template view.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I understand the API of a Fluid view.</li>
+                <li><input type="checkbox" > I know the public methods that assign variables and template paths.</li>
+                <li><input type="checkbox" > I know the internal API to configure Fluid behaviour.</li>
+                <li><input type="checkbox" > I know the action of rendering a template.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">HTML Basics</span>
+              <!-- <p>Understanding HTML.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know the standard HTML tags and how to use them.</li>
+                <li><input type="checkbox" > I am able to build simple HTML documents.</li>
+                <li><input type="checkbox" > I am able to adjust given HTML files to my needs.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">JavaScript Basics</span>
+              <!-- <p>Understanding JavaScript.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I am able to build and debug simple JavaScript functions.</li>
+                <li><input type="checkbox" > I am able to adjust JavaScript code to my needs.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">CSS Basics</span>
+              <!-- <p>Understanding CSS.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to address HTML tags with CSS.</li>
+                <li><input type="checkbox" > I am able to build stylesheets to style a given HTML document according my needs.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">ViewHelper: Link, Uri</span>
+              <!-- <p>Using the Fluid ViewHelpers f:link.* and f:uri.*.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know the ViewHelpers of the f:link.* family such as f:link.typolink, f:link.email etc. and their important arguments.</li>
+                <li><input type="checkbox" > I know the ViewHelpers of the f:uri.* family and their important arguments.</li>
+                <li><input type="checkbox" > I know how to use the f:link.* and f:uri.* ViewHelpers properly.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">ViewHelper: Format</span>
+              <!-- <p>Using Fluid Format ViewHelpers.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to use Fluid's format ViewHelper and its arguments and purposes.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">ViewHelper: Image</span>
+              <!-- <p>Using the Fluid ViewHelper f:image().</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" >  know the important arguments of f:image() ViewHelper (image, src, crop, cropVariant, loading) and how to use the ViewHelper.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">ViewHelper: Debug</span>
+              <!-- <p>Utilising output to access Fluid variables.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to use the debug ViewHelper to output variables available to Fluid.</li>
+                <li><input type="checkbox" > I know what makes this ViewHelper more appropriate than using a simple echo in my controller.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Data Processors</span>
+              <!-- <p>Data processors can be used to prepare data and transfer them to the Fluid template in order to generate an output by the template engine.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > <span class="caret">I know that the TYPO3 Core is shipped with the following data processors: </span>
+                <ul class="nested">
+                  <li><input type="checkbox" > CommaSeparatedValueProcessor</li>
+                  <li><input type="checkbox" > DatabaseQueryProcessor</li>
+                  <li><input type="checkbox" > FilesProcessor</li>
+                  <li><input type="checkbox" > FlexFormProcessor</li>
+                  <li><input type="checkbox" > GalleryProcessor</li>
+                  <li><input type="checkbox" > LanguageMenuProcessor</li>
+                  <li><input type="checkbox" > MenuProcessor</li>
+                  <li><input type="checkbox" > SiteProcessor</li>
+                  <li><input type="checkbox" > SiteLanguageProcessor</li>
+                  <li><input type="checkbox" > SplitProcessor</li>
+                </ul>
+                </li>
+                <li><input type="checkbox" > I know that a TYPO3 developer can create their own data processors.</li>
+                <li><input type="checkbox" > I know that dataProcessing is a property of the cObject FLUIDTEMPLATE.</li>
+                <li><input type="checkbox" > I know that data processors can be nested within each other.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">ViewHelper: cObject</span>
+              <!-- <p>Including cObjects from the global TypoScript configuration in Fluid templates.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to include cObjects in my Fluid templates.</li>
+                <li><input type="checkbox" > I know that data and a current value can be transferred to the cObject by arguments of the ViewHelper.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">ViewHelper: Asset</span>
+              <!-- <p>The ViewHelpers <f:asset.css> and <f:asset.script> can be used in Fluid templates to add CSS and JavaScript through files or inline.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know that purpose of the identifier and the impact if the same identifier is used more than once.</li>
+                <li><input type="checkbox" > I know how to modify the priority of the included CSS files.</li>
               </ul>
             </li>
           </ul>
