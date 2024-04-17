@@ -10,8 +10,12 @@ h1 {
   text-align: center;
 }
 
+/********** NAVBAR **********/
 /* Add a black background color to the top navigation */
 .topnav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: #333;
   overflow: hidden;
 }
@@ -71,18 +75,18 @@ h1 {
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
+  padding: 75px 15px 0 10px;
   border: 1px solid #ccc;
   border-top: none;
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
 /* Style the close button */
-.topright {
+.close {
   float: right;
   cursor: pointer;
   font-size: 28px;
 }
-.topright:hover {
+.close:hover {
   color: red;
 }
 /* Go from zero to full opacity */
@@ -90,6 +94,69 @@ h1 {
   from {opacity: 0;}
   to {opacity: 1;}
 }
+/********** NAVBAR END **********/
 
+/********** MAIN **********/
+ /* Remove default bullets */
+ ul {
+  list-style-type: none;
+}
 
- 
+/* Remove margins and padding from the parent ul */
+.up-list {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the caret/arrow */
+.caret {
+  cursor: pointer;
+  user-select: none; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+  transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+  display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+  display: block;
+}
+
+strong.part {
+  font-size: x-large;
+}
+strong.part {
+  font-size: larger;
+}
+ul.nested > p {
+  padding: 0;
+  margin: 0;
+}
+/********** MAIN END **********/
+
+/********** FOOTER **********/
+.footer {
+  margin: 0;
+  padding: 15px 0 5px 0;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+/********** FOOTER END **********/

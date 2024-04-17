@@ -4,53 +4,1402 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Styles and Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>TYPO3 Roadmap</title>
 </head>
 <body>
-  <nav>
-    <h1 id="headerTop">TYPO3 Roadmap</h1>
+  <nav class="sticky">
+    <!-- <h1 id="headerTop">TYPO3 Roadmap</h1> -->
     <div id="navbarTop" class="topnav">
-      <a href="#Home" class="tablinks" onclick="openRoad(event, 'Home')"><i class="fa fa-home"></i> Home</a>
+      <a href="#Home" class="tablinks" onclick="openRoad(event, 'Home')"><i class="fa fa-home"></i> TYPO3</a>
       <a href="#Editor" class="tablinks" onclick="openRoad(event, 'Editor')"><i class="fa fa-globe"></i> Editor</a>
       <a href="#Integrator" class="tablinks" onclick="openRoad(event, 'Integrator')"><i class="fa fa-fw fa-wrench"></i> Integrator</a>
       <a href="#Developer" class="tablinks" onclick="openRoad(event, 'Developer')"><i class="fa fa-laptop"></i> Developer</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a href="javascript:void(0);" class="icon" onclick="navbarCollapse()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
   </nav>
 
-  <header>
-  </header>
+  <header></header>
   
   <main>
     <div id="Home" ></div>
 
     <div id="Editor" class="tabcontent">
-      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <span onclick="this.parentElement.style.display='none'" class="close">&times</span>
       <h2><i class="fa fa-globe"></i> Editor</h2>
+
+      <ul class="up-list">
+        <li><span class="caret"><strong class="part">1. CMS Basics</strong></span>
+          <ul class="nested">
+            <li><span class="caret"><strong class="topic">About a CMS</strong></span>
+              <ul class="nested">
+                <p>A content management system is a software application for the collaborative creation, organization and editing of content, primarily in the online area.</p>
+                <li><span class="caret">Goals: </span>
+                  <ul class="nested">
+                    <li><input type="checkbox"> I can explain what a CMS is.</li>
+                    <li><input type="checkbox"> I can explain how content and design are separated in a CMS.</li>
+                    <li><input type="checkbox"> I know about features and advantages using a CMS.</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><span class="caret">Frontend and backend</span>
+              <ul class="nested">
+                <li><span class="caret">Topic</span>
+                  <ul class="nested">
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><span class="caret">Choosing a secure password</span>
+              <ul class="nested">
+                <li><span class="caret">Topic</span>
+                  <ul class="nested">
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><span class="caret">Backend account</span>
+              <ul class="nested">
+                <li><span class="caret">Topic</span>
+                  <ul class="nested">
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><span class="caret">About backend users and backend user groups</span>
+              <ul class="nested">
+                <li><span class="caret">Topic</span>
+                  <ul class="nested">
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><span class="caret">Roles in TYPO3</span>
+              <ul class="nested">
+                <li><span class="caret">Topic</span>
+                  <ul class="nested">
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><span class="caret">Basic usage of a browser</span>
+              <ul class="nested">
+                <li><span class="caret">Topic</span>
+                  <ul class="nested">
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><span class="caret">Working with translations</span>
+              <ul class="nested">
+                <li><span class="caret">Topic</span>
+                  <ul class="nested">
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><span class="caret">Backend Structure</span>
+              <ul class="nested">
+                <li><span class="caret">Topic</span>
+                  <ul class="nested">
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="up-list">
+        <li><span class="caret"><strong class="part">2. TYPO3 Basics</strong></span>
+          <ul class="nested">
+            <li><span class="caret">CMS</span>
+              <ul class="nested">
+                <li><span class="caret">Topic</span>
+                  <ul class="nested">
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="up-list">
+        <li><span class="caret"><strong class="part">3. TYPO3 Handling</strong></span>
+          <ul class="nested">
+            <li><span class="caret">CMS</span>
+              <ul class="nested">
+                <li><span class="caret">Topic</span>
+                  <ul class="nested">
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="up-list">
+        <li><span class="caret"><strong class="part">4. Media Management</strong></span>
+          <ul class="nested">
+            <li><span class="caret">CMS</span>
+              <ul class="nested">
+                <li><span class="caret">Topic</span>
+                  <ul class="nested">
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="up-list">
+        <li><span class="caret"><strong class="part">5. Target Group Optimization</strong></span>
+          <ul class="nested">
+            <li><span class="caret">CMS</span>
+              <ul class="nested">
+                <li><span class="caret">Topic</span>
+                  <ul class="nested">
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                    <li><input type="checkbox"> item</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
     </div>
     
     <div id="Integrator" class="tabcontent">
-      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <span onclick="this.parentElement.style.display='none'" class="close">&times</span>
       <h2><i class="fa fa-fw fa-wrench"></i> Integrator</h2>
     </div>
-    
+
     <div id="Developer" class="tabcontent">
-      <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+      <span onclick="this.parentElement.style.display='none'" class="close">&times</span>
       <h2><i class="fa fa-laptop"></i> Developer</h2>
+
+      <ul class="up-list">
+        <li><span class="caret"><strong class="part">1. Software Architecture for Extensions</strong></span>
+          <ul class="nested">
+            <li><input type="checkbox" > <span class="caret">What is MVC?</span>
+              <!-- <p>The MVC pattern, what it can be used for, and common implementations.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I have a basic understanding of what MVC is</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">What is a Templating Engine?</span>
+              <!-- <p>Introduction to the basic concept of a templating engine/processor.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can explain what the basic concept of a templating engine is</li>
+                <li><input type="checkbox" > I can identify needed parts for a templating engine.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">PSR Standards</span>
+              <!-- <p>Knowing the most important PSR programming standards in the TYPO3 world</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what PSR is</li>
+                <li><input type="checkbox" > I know the topics the most important standards cover</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Domain-Driven Design (DDD)</span>
+              <!-- <p>Understanding the concept of DDD</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know the concept, its purposes and main points</li>
+                <li><input type="checkbox" > I know where to find information to learn more</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">PHP</span>
+              <!-- <p>Ability to develop and execute PHP scripts</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to execute PHP scripts in my local environment</li>
+                <li><input type="checkbox" > I know how PHP is executed by a web server</li>
+                <li><input type="checkbox" > I can develop functionality in PHP</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Model</span>
+              <!-- <p>This skill covers the model in the MVC context</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know which role models play in the software architectural pattern MVC.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">View Pattern</span>
+              <!-- <p>What is a view in MVC context</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know which role the view plays in the pattern</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">PSR-14: Event Dispatching</span>
+              <!-- <p>This skill covers the basics of the PHP standard on Event dispatching</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know the four use cases of events specified by PSR-14</li>
+                <li><input type="checkbox" > I know about the different components of a PSR-14-compliant event system (Listener, Emitter, Dispatcher, ListenerProvider)</li>
+                <li><input type="checkbox" > I know when mutable or immutable events should be used.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Dependency Injection</span>
+              <!-- <p>Knowledge about dependency injection in general</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I understand the concept of dependency injection, its benefits and limitations</li>
+                <li><input type="checkbox" > I know when dependency injection should be used</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">The builder design pattern in TYPO3</span>
+              <!-- <p>TYPO3 provides some concrete classes following the Builder design pattern</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know the different TYPO3 builder implementations</li>
+                <li><input type="checkbox" > I can use the different TYPO3 builder implementations.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Builder design pattern</span>
+              <!-- <p>Understanding the “Builder” Design Pattern</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know the Builder Pattern and what it entails</li>
+                <li><input type="checkbox" > I know how to retrieve or create new instances of a builder</li>
+                <li><input type="checkbox" > I know how to re-use and not re-use builder instances</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Software Design Patterns</span>
+              <!-- <p>This skill covers Software Design Patterns, established solutions for repeated problems in software development</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what Design Patterns are and why they are useful</li>
+                <li><input type="checkbox" > I know examples of Design Patterns used in TYPO3</li>
+                <li><input type="checkbox" > I know when to apply Design Patterns in my own code</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="up-list">
+        <li><span class="caret"><strong class="part">2. Templating and Other Outputs</strong></span>
+          <ul class="nested">
+            <li><input type="checkbox" > <span class="caret">What is Fluid?</span>
+              <!-- <p>Definition of Fluid and its possible use with regards to the Model View Controller pattern.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can explain what Fluid is. </li>
+                <li><input type="checkbox" > I can define its role in the context of a MVC system. </li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Outputting Variables</span>
+              <!-- <p>Basic usage of variables inside Fluid templates and knowledge about escaping.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can find out which variables are passed to a Fluid view.</li>
+                <li><input type="checkbox" > I can output variables with the according path syntax.</li>
+                <li><input type="checkbox" > I know how Fluid escapes variable output in templates.</li>
+                <li><input type="checkbox" > I know how to disable escaping of variables.</li>
+                <li><input type="checkbox" > I also know which security risks (XSS) may occure, when disable escaping of variables.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">ViewHelpers</span>
+              <!-- <p>Getting to know what a ViewHelper is.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what ViewHelpers are.</li>
+                <li><input type="checkbox" > I know what a Namespace is.</li>
+                <li><input type="checkbox" > I can use ViewHelpers in my template.</li>
+                <li><input type="checkbox" > I know which ViewHelpers are shipped by stand-alone Fluid, and which are provided by TYPO3 CMS.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Templates, Layouts, Partials</span>
+              <!-- <p>Fluid Templates, Layouts, Partials - their interaction and properties.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what Fluid Templates are</li>
+                <li><input type="checkbox" > I know what Fluid Layouts are</li>
+                <li><input type="checkbox" > I know what Fluid Partials are</li>
+                <li><input type="checkbox" > I know ow Templates, Layouts and Partials are connected</li>
+                <li><input type="checkbox" > I can structure Templates, Layouts and Partials</li>
+                <li><input type="checkbox" > I can combine Templates, Layouts and Partials for templating</li>
+                <li><input type="checkbox" > I can use Templates, Layouts and Partials to realise a specific template example</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">ViewHelper: Comment</span>
+              <!-- <p>Including comments in Fluid templates.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to include Fluid comments in my templates.</li>
+                <li><input type="checkbox" > I know the difference between HTML comments and Fluid comments regarding the rendered HTML output.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">ViewHelper: If/Else</span>
+              <!-- <p>Creating if/else statements within Fluid templates.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can create an if/else statement in my templates with the help of the according Fluid ViewHelper.</li>
+                <li><input type="checkbox" > I can apply conditions using the inline notation of Fluid.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">ViewHelper: For-Loop</span>
+              <!-- <p>Iterating through a list with the for ViewHelper.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to cycle through items with the help of the for ViewHelper inside my Fluid templates.</li>
+                <li><input type="checkbox" > I also know how to utilize the iteration object within a cycle.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Importing ViewHelpers</span>
+              <!-- <p>Using third party ViewHelpers in your Fluid templates.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can include third party ViewHelpers in my Fluid templates.</li>
+                <li><input type="checkbox" > I know that a TYPO3 Developer can build custom ViewHelpers</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">ViewHelper: Render</span>
+              <!-- <p>Using f:render to render sections and partials as well as passing arguments.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can use f:render in my templates to render sections and partials.</li>
+                <li><input type="checkbox" > I can pass arguments (along with optional flagging).</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Using the Fluid View</span>
+              <!-- <p>Knowing and understanding the different parts of a Fluid template view.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I understand the API of a Fluid view.</li>
+                <li><input type="checkbox" > I know the public methods that assign variables and template paths.</li>
+                <li><input type="checkbox" > I know the internal API to configure Fluid behaviour.</li>
+                <li><input type="checkbox" > I know the action of rendering a template.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">ViewHelper: Link, Uri</span>
+              <!-- <p>Using the Fluid ViewHelpers f:link.* and f:uri.*.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know the ViewHelpers of the f:link.* family such as f:link.typolink, f:link.email etc. and their important arguments.</li>
+                <li><input type="checkbox" > I know the ViewHelpers of the f:uri.* family and their important arguments.</li>
+                <li><input type="checkbox" > I know how to use the f:link.* and f:uri.* ViewHelpers properly.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">ViewHelper: Format</span>
+              <!-- <p>Using Fluid Format ViewHelpers.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to use Fluid's format ViewHelper and its arguments and purposes.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">ViewHelper: Image</span>
+              <!-- <p>Using the Fluid ViewHelper f:image().</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" >  know the important arguments of f:image() ViewHelper (image, src, crop, cropVariant, loading) and how to use the ViewHelper.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">JSON</span>
+              <!-- <p>The JSON format and its usages in web development.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to decode JSON with PHP functions.</li>
+                <li><input type="checkbox" > I know how to create a valid JSON string with PHP functions.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Extbase JSON View</span>
+              <!-- <p>The built-in JSON View in Extbase.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how the JSON view differs from a normal HTML-based view.</li>
+                <li><input type="checkbox" > I know how the JSON view works when the data structure parts are selected for rendering.</li>
+                <li><input type="checkbox" > I can configure the JSON output for simple and complex (nested) data structures.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Extbase Fluid View</span>
+              <!-- <p>The Fluid-based HTML view of Extbase.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how the Fluid view relates to Fluid.</li>
+                <li><input type="checkbox" > I can use layouts and partials in my templates.</li>
+                <li><input type="checkbox" > I can configure the view to include templates from multiple directories, with correct priority.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">ViewHelper: Debug</span>
+              <!-- <p>Utilising output to access Fluid variables.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to use the debug ViewHelper to output variables available to Fluid.</li>
+                <li><input type="checkbox" > I know what makes this ViewHelper more appropriate than using a simple echo in my controller.</li>
+                <li><input type="checkbox" > item</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">ViewHelper: Form</span>
+              <!-- <p>The TYPO3 CMS form ViewHelper for Fluid.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how Extbase forms can be created in Fluid templates.</li>
+                <li><input type="checkbox" > I know how data can be filled into form fields.</li>
+                <li><input type="checkbox" > I know how to connect object properties and form fields.</li>
+                <li><input type="checkbox" > I can create a form and connect it to an object.</li>
+                <li><input type="checkbox" > I can use the different view helpers to create form fields.</li>
+                <li><input type="checkbox" > I know how Extbase ensures that no additional fields are passed by malicious actors.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Building data processors</span>
+              <!-- <p>This skill covers the creation of data processors for TYPO3.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to implement a data processor.</li>
+                <li><input type="checkbox" > I know how to alias a data processor.</li>
+                <li><input type="checkbox" > I know how to support `stdWrap` for data processor properties.</li>
+                <li><input type="checkbox" > I know how to execute data processors, e.g. for nesting.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="up-list">
+        <li><span class="caret"><strong class="part">3. Care Architecture & APIs</strong></span>
+          <ul class="nested">
+            <li><input type="checkbox" > <span class="caret">XLIFF / locallang.xlf</span>
+              <!-- <p>Working with XLIFF files in TYPO3 for multilingual websites. Includes writing and extending XLIFF files, overriding translations in TypoScript, and using the f:translate ViewHelper.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what XLIFF is.</li>
+                <li><input type="checkbox" > I know how to write and extend an XLIFF file.</li>
+                <li><input type="checkbox" > I know how to introduce new languages and generate the needed XLIFF file.</li>
+                <li><input type="checkbox" > I know how to override the translations of an extension in TypoScript.</li>
+                <li><input type="checkbox" >  know how to access the translations with the f:translate-Viewhelper.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">File abstraction layer (FAL)</span>
+              <!-- <p>Know about transparent inclusion of external file sources into TYPO3.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know there is an abstraction layer between actual file storages and their handling in TYPO3</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Flexform Concepts</span>
+              <!-- <p>Basics about the concept of Flexforms and how it relates to the TCA.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what a Flexform data structure is and how it compares to a similar TCA data structure.</li>
+                <li><input type="checkbox" > I know how data for a Flexform field is stored.</li>
+                <li><input type="checkbox" > I can create a Flexform data structure in XML.</li>
+                <li><input type="checkbox" > can configure a Flexform field to use my XML data structure.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Flexform Configuration Data Structure</span>
+              <!-- <p>How to create and configure a data structure for my plugin’s configuration.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how configuration is managed by the “plugin” content type.</li>
+                <li><input type="checkbox" > I can provide a custom configuration data structure for my plugin.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Accessing FlexForm Data</span>
+              <!-- <p>Using data provided in FlexForms in plugin CEs and custom records</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how FlexForm data is stored in the database.</li>
+                <li><input type="checkbox" > I can extract data from a FlexForm field.</li>
+                <li><input type="checkbox" > I can modify the contents of a FlexForm field.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Database Management System (DBMS)</span>
+              <!-- <p>Knowledge about DBMS.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what a DBMS is and what it is used for.</li>
+                <li><input type="checkbox" > I can name some examples.</li>
+                <li><input type="checkbox" > I know what the term “relational” in the context of DBMS means.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Doctrine DBAL</span>
+              <!-- <p>Basic knowledge about the Doctrine component for transparently accessing several DBMS in PHP.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what Doctrine DBAL is.</li>
+                <li><input type="checkbox" > I know the difference between Doctrine DBAL and Doctrine ORM.</li>
+                <li><input type="checkbox" > I know the role of Doctrine DBAL in TYPO3.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Using the QueryBuilder</span>
+              <!-- <p>How to write queries in TYPO3.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to use the QueryBuilder built into TYPO3.</li>
+                <li><input type="checkbox" > I know how to write a secure query that can target different DBMS.</li>
+                <li><input type="checkbox" > I know how the Core QueryBuilder differs from Doctrine DBAL’s QueryBuilder</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Using Query Restrictions</span>
+              <!-- <p>How to restrict database queries.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know about the restriction containers applied automatically in TYPO3.</li>
+                <li><input type="checkbox" > I know the available restrictions and their usage.</li>
+                <li><input type="checkbox" > I know how to change which restrictions are applied.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">TYPO3 Debugging Utilities</span>
+              <!-- <p>Knowledge about debugging utilities provided by TYPO3.</p> -->
+              <ul class="nested">
+                <li>
+                  <input type="checkbox" > <span class="caret"> I know the built-in mechanics to output debug messages:</span>
+                  <ul class="nested">
+                    <li><input type="checkbox" > Extbase DebuggerUtility</li>
+                    <li><input type="checkbox" > DebugUtility</li>
+                    <li><input type="checkbox" > Admin panel</li>
+                  </ul>
+                </li>
+                <li><input type="checkbox" > I know how to add debug output to the frontend.</li>
+                <li><input type="checkbox" > I know how to add debug output to the backend.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Tracing Errors in Logs</span>
+              <!-- <p>Knowledge about log sources and how to utilize them in order to resolve errors.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know where to look when my instance throws error messages or white pages.</li>
+                <li><input type="checkbox" > I know which configuration options define the error output of TYPO3 and Extbase.</li>
+                <li><input type="checkbox" > I know how to limit error output to development machines or certain IPs on live instances.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Logging API</span>
+              <!-- <p>Knowledge about the logging API provided by TYPO3.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to compose a proper log message and of which parts it consists.</li>
+                <li><input type="checkbox" > I know about the different log levels and their meaning.</li>
+                <li><input type="checkbox" > I know how to get and use a logger in my code.</li>
+                <li><input type="checkbox" > I know about log channels and how to use them in my code.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Debugging in PHP</span>
+              <!-- <p>Basic knowledge about error tracing methods in PHP.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know about simple methods to print values to output (var_dump, print_r, echo, die).</li>
+                <li><input type="checkbox" > I know how to set up and use a debugging tool like Xdebug.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Knowledge about Environment Error Logs</span>
+              <!-- <p>Ability to locate logs provided by system components.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know where theerror logs of TYPO3, a web server and PHP are located.</li>
+                <li><input type="checkbox" > I can access these logs in order to trace errors occurring in my environment.</li>
+                <li><input type="checkbox" > I know how to interpret error log messages in order to resolve the error.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">PSR-7: Request/Response</span>
+              <!-- <p>This skill covers the PSR standard for HTTP request/response objects.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I have basic knowledge about the standard PSR-7.</li>
+                <li><input type="checkbox" > I know how to deal with request and response objects in PHP.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Extending Existing Functionality</span>
+              <!-- <p>Extending core and extension functionality without changing code.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what hooks are and the two different types of hook implementations.</li>
+                <li><input type="checkbox" > I know about PSR-14 events and how they are implemented in TYPO3.</li>
+                <li><input type="checkbox" > I know what userFuncs in the TCA are and how to take advantage of them.</li>
+                <li><input type="checkbox" > I can identify places where TYPO3 allows to extend built-in functionality.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">PSR-3: Logger Interface standard</span>
+              <!-- <p>Knowledge about the PSR-3 logging standard for PHP.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know about the interfaces defined by PSR-3.</li>
+                <li><input type="checkbox" > I know about the standard implementations of PSR-3.</li>
+                <li><input type="checkbox" > I know the API methods the PSR-3 LoggerInterface provides for writing log messages.</li>
+                <li><input type="checkbox" > I can use PSR-3-based logging in my own extensions.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">The Caching Framework</span>
+              <!-- <p>This skill covers the Core's caching framework. It shows how to use existings caches and register custom caches and the types of cache frontends and backends. Additional topics are expiration and tagging of cache entries and flushing of caches.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can use existing caches</li>
+                <li><input type="checkbox" > I can register and use custom caches</li>
+                <li><input type="checkbox" > I can decide which types of cache frontends and backends to use for which purpose</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Commands</span>
+              <!-- <p>This skill covers the creation of command-line commands for TYPO3, based on the Symfony Console component.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to execute existing Symfony CLI commands.</li>
+                <li><input type="checkbox" > I can create and register new Symfony CLI commands</li>
+                <li><input type="checkbox" > I can find my way around existing commands and can modify them.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Extension scanner</span>
+              <!-- <p>This skill covers the Extension Scanner, which extension authors and project maintainers can use to detect possible problems in their extensions while upgrading them to a newer TYPO3 version.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can use the extension scanner from within the TYPO3 BE and from the command line. I know what kind of problems the scanner finds, and the limitations of the scanner.</li>
+                <li><input type="checkbox" > I can interpret findings of the scanner and judge whether they are relevant for my project.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Flash Messages</span>
+              <!-- <p>This skill covers flash messages, a mechanism used to communicate e.g. results of an action to the user.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know where the Core flash messages and notifications can be used (and where not). I know which type of flash message to use for what purpose.</li>
+                <li><input type="checkbox" > I can create and output flash messages using PHP, HTML and JavaScript. I can output flash messages created in existing code, e.g. other extensions.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Mail API</span>
+              <!-- <p>This skill covers the TYPO3 Mail API, which internally uses Symfony’s Mailer and Mime component for creating and sending emails.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can configure the Mail API for different contexts.</li>
+                <li><input type="checkbox" > I can create new emails in my extensions and send them through the Mail API.</li>
+                <li><input type="checkbox" > I know how to create Fluid-based emails.</li>
+                <li><input type="checkbox" > I am familiar with the pros and cons of the different transport methods.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Error handling/Exception handling</span>
+              <!-- <p>This skill provides knowledge on TYPO3-specific ways of handling errors during program execution and finding information about any errors that occurred.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can configure the error and exception handling for development and production.</li>
+                <li><input type="checkbox" > I know when errors are handled by the error handler, and where to find any logged errors.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">DataHandler (TCE= TYPO3 Core Engine)</span>
+              <!-- <p>This skill handles basic knowledge of the DataHandler, a TYPO3 Core component for processing user data. It also covers how it can be leveraged in custom developed extensions.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how the DataHandler processes data entered in forms in the Backend.</li>
+                <li><input type="checkbox" > I know about hooks I can use for modifying data during processing.</li>
+                <li><input type="checkbox" > I know how to use DataHandler in my own extensions (e.g. for mass-creation of records).</li>
+                <li><input type="checkbox" > I can modify data during the processing of certain tasks (e.g. versioning).</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Writing and using own Symfony Expressions</span>
+              <!-- <p>This skill covers the Symfony Expression syntax used in e.g. TypoScript conditions and ways to extend that functionality with custom code.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know the Symfony component "Expression Language" and its syntax.</li>
+                <li><input type="checkbox" > I can write and register my own ExpressionFunctionProviders.</li>
+                <li><input type="checkbox" > I can provide custom TypoScript conditions using my own ExpressionFunctionProviders.</li>
+                <li><input type="checkbox" > I know where expressions are used in site configurations.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Contexts & Aspects</span>
+              <!-- <p>This skill introduces usage of the request context and aspects that can be used to enrich this context, e.g. with localization information.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know the difference between the ApplicationContext and the Context API.</li>
+                <li><input type="checkbox" > I can use the Context API, know which Aspects exist, and can access information from Aspects.</li>
+                <li><input type="checkbox" > I know how to add my own Aspects to the Context.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">PageTitle API</span>
+              <!-- <p>This skill covers the PageTitle API, which can be used to flexibly modify the title of the generated page, e.g. in the single view of a plugin.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know about the structure of the PageTitle API.</li>
+                <li><input type="checkbox" > I can implement and register custom PageTitleProviders to modify the document's title.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Using the PageRenderer in Extensions</span>
+              <!-- <p>This skill covers the PageRenderer for extension usage, a TYPO3 Core component that is responsible for collecting and generating information about various parts of the page and handling the final output of a page.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can use the PageRenderer to modify or extend CSS, JavaScript and other header information in frontend and backend</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">MetaTag API</span>
+              <!-- <p>This skill covers the MetaTag API, which can be used to manipulate the meta tags in the <head> section of the generated HTML page.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can use the MetaTag API to add, modify or remove meta tags.</li>
+                <li><input type="checkbox" > I can implement and register my own MetaTagManagers.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Environment class</span>
+              <!-- <p>This skill covers knowledge on TYPO3’s Environment class, which provides system-specific details that are independent from the system environment.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know which kind of information the Environment class in the TYPO3 Core provides.</li>
+                <li><input type="checkbox" > I can write code that is not dependent on a specific type of operating system (Windows, Linux, etc.)</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">The System Registry API</span>
+              <!-- <p>This skill covers the system registry API, provided by the TYPO3 Core to store instance-specific data.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can use the registry API to read and write data.</li>
+                <li><input type="checkbox" > I can decide when the registry makes sense to use and when not.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">PSR-15: Middlewares</span>
+              <!-- <p>This skill covers the PHP standard on middlewares.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what middlewares and request handlers are specified in PSR-15 and how they relate to each other.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Request processing with middlewares</span>
+              <!-- <p>This skill covers the usage of PSR-15 middlewares in TYPO3 - both for frontend and backend request processing.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I understand how the core leverages middlewares to modularize request processing (middleware dispatcher, chained middlewares, …).</li>
+                <li><input type="checkbox" > I know how to find out which middlewares are configured and their order of execution.</li>
+                <li><input type="checkbox" > I can write my own middlewares and add them to the frontend and backend request processing.</li>
+                <li><input type="checkbox" >  can overwrite Core-provided middlewares.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Route Enhancers</span>
+              <!-- <p>This skill covers route enhancers which are used to amend the URL routing provided by the TYPO3 core.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what Route Enhancers are and about the different types that the Core provides.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Extending site configurations</span>
+              <!-- <p>This skill covers custom extensions to the TYPO3 Core Site configuration module.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can add custom fields to the site configuration module.</li>
+                <li><input type="checkbox" > I know how to read values that are stored in custom site configuration fields.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">The USER/USER_INT TypoScript objects</span>
+              <!-- <p>This skill covers the USER and USER_INT TypoScript objects, which are used to integrate custom code in the TYPO3 frontend rendering process.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what the USER TypoScript object is and how it relates to plugins.</li>
+                <li><input type="checkbox" > I know the differences between USER and USER_INT.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">JavaScript Event API in the Backend</span>
+              <!-- <p>This skill covers the JavaScript API for Events in the TYPO3 Backend, relevant for programming custom backend modules and extending existing modules.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know about the Event API in JavaScript</li>
+                <li><input type="checkbox" > I can register my own event listeners</li>
+                <li><input type="checkbox" > I know about the different event strategies and their performance implications</li>
+                <li><input type="checkbox" > I know about the different event classes and when to use which of them</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Providing own events</span>
+              <!-- <p>The focus of this skill is providing custom events within the TYPO3 PSR-14 implementation.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can create events for my custom extensions and dispatch them with the Core’s EventDispatcher.</li>
+                <li><input type="checkbox" > I know how to implement the different event use cases specified in PSR-14</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Using existing PSR-14 events</span>
+              <!-- <p>This skill covers the implementation and usage of events in the TYPO3 Core.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how the TYPO3 Core defines events and attaches listeners to events.</li>
+                <li><input type="checkbox" > I can register my own listeners for events provided by the Core, extensions and 3rd-party PHP libraries.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Debugging PSR-14 Event Handling</span>
+              <!-- <p>This skill covers debugging the registration, dispatching and handling of events.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to retrieve a list of registered event listeners.</li>
+                <li><input type="checkbox" > I can use the admin panel to retrieve an overview of dispatched events.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">PSR-18: HTTP Client</span>
+              <!-- <p>This skill covers the PSR HTTP client standard.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know about the client interface provided by PSR-18.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">PSR-17: HTTP Message Factories</span>
+              <!-- <p>This skill covers the PSR standard for HTTP message factories and the differences to the earlier HTTP request/response standard.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know about the various interfaces provided by PSR-17 and their different purposes</li>
+                <li><input type="checkbox" > I know why PSR-17 was created and the differences to PSR-7</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Notification Actions</span>
+              <!-- <p>Notifications as flashmessages in backend can have actions assigned to interact with the editor.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know the different types of actions for notifications.</li>
+                <li><input type="checkbox" > I know how to  define javascript actions in notification messages.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Backend Notifications</span>
+              <!-- <p>The focus of this skill is to know how to utilize notifications for backend users.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > The focus of this skill is to know how to utilize notifications for backend users.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Pagination API</span>
+              <!-- <p>The abstraction for paginations provided by the TYPO3 Core.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to apply pagination to result arrays.</li>
+                <li><input type="checkbox" > I know how to apply pagination to extbase query results</li>
+                <li><input type="checkbox" > I know the different types of pagination the Core provides.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Rich Text Editor API</span>
+              <!-- <p>Modifying CKeditor’s configuration programmatically: You can modify existing or add complete new configurations</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to configure the Rich Text Editor in TYPO3.</li>
+                <li><input type="checkbox" > I know how to modify YAML configuration, programatically, using events.</li>
+                <li><input type="checkbox" > I know how to plug in a custom RTE.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Building Custom Dashboard Widgets</span>
+              <p>This skill covers creating custom widgets for the TYPO3 Backend Dashboard and configuring existing widget groups.</p>
+              <ul class="nested">
+                <li><input type="checkbox" > I know which abstract classes and interfaces the core provides, to build my own custom widgets.</li>
+                <li><input type="checkbox" > I know how to register new widgets and how to assign them to one or several widget groups.</li>
+                <li><input type="checkbox" > I can also create new widget groups.</li>
+                <li><input type="checkbox" > I know how to create new DataProvider in order to compose new widgets based on existing widget implementations</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Custom Route Enhancers</span>
+              <!-- <p>This skill covers the creation of custom Route Enhancers for the TYPO3 frontend routing.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know the difference between a Route Enhancer, a Decorator and a Mapper.</li>
+                <li><input type="checkbox" > I know how to implement a custom Route Enhancer.</li>
+                <li><input type="checkbox" > I can use my custom Route Enhancer for to route requests to my extension</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Database Record Translations</span>
+              <!-- <p>This skill covers the translation configuration of database records via TCA.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can make records translatable.</li>
+                <li><input type="checkbox" > I know how to configure translation behavior of TCA columns.</li>
+                <li><input type="checkbox" > I am familiar with the different translation modes in relation fields (IRRE).</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">PSR-11: Symfony Dependency Management/Injection</span>
+              <!-- <p>This skill covers different types of dependency injection in TYPO3 and the configuration of dependency injection.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can configure my extension to make use of PSR-11 dependency injection.</li>
+                <li><input type="checkbox" > I know the different approaches to dependency injection in TYPO3.</li>
+                <li><input type="checkbox" > I can decide which classes can be or need to be public.</li>
+                <li><input type="checkbox" > I can decide which classes can be or need to be public.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">AssetCollector class and ViewHelpers</span>
+              <!-- <p>The AssetCollector class, its methods and the corresponding ViewHelpers.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can add CSS and JavaScript files to my controllers and views.</li>
+                <li><input type="checkbox" > I know when and how to use the API, and when and how to use the f:asset.* ViewHelpers.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">TYPO3 Version API</span>
+              <!-- <p>The TYPO3 Version information API.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to retrieve the major and branch version numbers of the current TYPO3 instance.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Data structures in TYPO3 core</span>
+              <!-- <p>Classes for data structures, e.g., the BitSet and Enumeration class, and their usage.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can decide in which cases to use the BitSet class, can explain the drawbacks and know how to use it properly.</li>
+                <li><input type="checkbox" > I understand how bit sets work in general.</li>
+                <li><input type="checkbox" > I know the use cases of the Enumeration class and the patterns to use for it.</li>
+                <li><input type="checkbox" > I know the use case of the TypeInterface and how to use it.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Extension: Lowlevel</span>
+              <!-- <p>The lowlevel extension allows examining the current TYPO3 configuration.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know which information the backend module of EXT:lowlevel provides.</li>
+                <li><input type="checkbox" > I can examine my configuration changes with the help of the EXT:lowlevel backend module.</li>
+                <li><input type="checkbox" > I know how to debug execution order of middlewares and event handlers with EXT:lowlevel.</li>
+                <li><input type="checkbox" > I know how to utilize the tools that EXT:lowlevel provides for managing my development instance.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">User-defined TCA type</span>
+              <!-- <p>This skill covers the TCA type “user”.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to define a custom TCA field with custom rendering and behaviour</li>
+                <li><input type="checkbox" > I know the difference between the `user` type and a custom `renderType`</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">TCA Types for record relations</span>
+              <!-- <p>This skill covers TCA configuration options to define relations to other records.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know about TCA types that define record relations</li>
+                <li><input type="checkbox" > I know how to use `renderType` for those types to change appearance and behavior</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">TCA types File and Folder</span>
+              <!-- <p>This skill covers the TCA types "file" and "folder", used for relations from records to files and folders.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know about options to define relations from records to files/folders</li>
+                <li><input type="checkbox" > I know how to change appearance and behaviour of those relations</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">TCA type "slug"</span>
+              <!-- <p>This skill covers the TCA type slug to create slugs for records.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to define a field to integrate custom records into routing (TCA type slug)</li>
+                <li><input type="checkbox" > I know about `generatorOptions` to influence how the slug is generated</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">TCA Types for Basic Input</span>
+              <!-- <p>This skill groups knowledge about TCA Types that define input possibilities.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to define basic input fields by using TCA types</li>
+                <li><input type="checkbox" > I know how to change appearance and behavior of the fields by using renderTypes</li>
+                <li><input type="checkbox" > item</li>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Special Input TCA Types</span>
+              <!-- <p>This skill covers specialized text input types in TCA.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know about purpose defined special TCA types</li>
+                <li><input type="checkbox" > I know how to configure a basic TCA type to the same purpose</li>
+                <li><input type="checkbox" > I know how to change appearance and behavior by using 'fieldControl' technique.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">TYPO3 Message bus</span>
+              <!-- <p>This skill covers the TYPO3 message bus solution based on the Symfony Messenger component.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what the message bus is and how it works.</li>
+                <li><input type="checkbox" > I know how to create my own messages and send them over the bus.</li>
+                <li><input type="checkbox" > I know how to create handlers for messages and register them.</li>
+                <li><input type="checkbox" > I know why some messages should be handled asynchronously.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Extending the Admin Panel</span>
+              <!-- <p>This skill covers implementing custom functionality for the Admin Panel.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to display information in the Admin Panel panel bar.</li>
+                <li><input type="checkbox" > I know how to create a module for the Admin Panel.</li>
+                <li><input type="checkbox" > I know how to include custom CSS and JavaScript files for custom modules.</li>
+                <li><input type="checkbox" > I know how to add a custom setting to the Admin Panel and how to retrieve its value to influence my code's behaviour.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Admin Panel usage as a developer</span>
+              <!-- <p>This skill handles the usage of the TYPO3 Admin Panel as an Extension Developer.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can use the Admin Panel to check dispatched events.</li>
+                <li><input type="checkbox" > I can use the Admin Panel to check executed SQL Queries.</li>
+                <li><input type="checkbox" > I can use the Admin Panel to check the debug log.</li>
+                <li><input type="checkbox" > I can use the Admin Panel to check the request Info.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Creating Backend modules</span>
+              <!-- <p>This skill covers the creation of custom backend modules for TYPO3.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to register a backend module with controller actions.</li>
+                <li><input type="checkbox" > I know how to register a backend module with routes.</li>
+                <li><input type="checkbox" > I know which APIs to use to get a similar look and feel as the Core's backend modules.</li>
+                <li><input type="checkbox" > I know how to route to a backend module.</li>
+                <li><input type="checkbox" > I know how to retrieve current request info within a module.</li>
+                <li><input type="checkbox" > I know how to access backend module configuration.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="up-list">
+        <li><span class="caret"><strong class="part">4. General Extension Architecture</strong></span>
+          <ul class="nested">
+            <li><input type="checkbox" > <span class="caret">Extension File and Folder Structure</span>
+              <!-- <p>Knowing the file structure of an extension and where to place files by convention and due to technical requirements.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how the directory structure of a TYPO3 extension looks like and the additional Extbase conventions.</li>
+                <li><input type="checkbox" > I know the purposes of files in TYPO3 extensions (such as ext_emconf.php, ext_tables.php, and others).</li>
+                <li><input type="checkbox" > I can create an extension that is installable via the TYPO3 Extension Manager and/or Composer.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Table Configuration Array (TCA)</span>
+              <!-- <p>Configuring database tables for usage in the backend and frontend.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know about the different sections of the TCA (ctrl, columns, palettes, …).</li>
+                <li><input type="checkbox" > I know how to configure rendering of a table in backend forms.</li>
+                <li><input type="checkbox" > I know how the TCA controls information processing by the TYPO3 core (DataHandler).</li>
+                <li><input type="checkbox" > I know how the TCA is compiled from different extensions and cached.</li>
+                <li><input type="checkbox" > I can create a compliant TCA for my extensions.</li>
+                <li><input type="checkbox" > I can extend the TCA of existing tables from the core or other extensions.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Database Schema Definition</span>
+              <!-- <p>This skill handles definition of own database tables and fields for an extension for automatic management by the TYPO3 Core.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can write an ext_tables.sql file both for creating new and extending existing tables.</li>
+                <li><input type="checkbox" > I know which fields are generated automatically based on the TCA.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">What is SQL?</span>
+              <!-- <p>Knowledge about how to access and manipulate data in DBMS.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know where to find information about SQL.</li>
+                <li><input type="checkbox" > I know how to issue queries against my local setup.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Creating Scheduler Tasks and Commands</span>
+              <!-- <p>How to build Scheduler tasks and commands for automating recurring tasks.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to create a new Scheduler task.</li>
+                <li><input type="checkbox" > I know how to create a new command.</li>
+                <li><input type="checkbox" > I know about the context Scheduler tasks are executed in.</li>
+                <li><input type="checkbox" > I know about the context commands are executed in.</li>
+                <li><input type="checkbox" > I know that commands can be executed as scheduler tasks.</li>
+                <li><input type="checkbox" > I know the differences between scheduler tasks and commands.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Composer for TYPO3 Extensions</span>
+              <!-- <p>This skill introduces usage of Composer for extensions and their integration into TYPO3 projects.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know which fields to use in the composer.json of my extension, what they mean and how they work, so that I can create working, readable and helpful composer.json files.</li>
+                <li><input type="checkbox" > I can use 3rd-party extensions and my own extensions in my site project via Composer.</li>
+                <li><input type="checkbox" > I also know the benefits and drawbacks of using Composer and can advise my coworkers and clients when to use which approach.</li>
+                <li><input type="checkbox" > In addition, I can build composer.json and ext_emconf.php files in such a way that their data is synchronized correctly.</li>
+                <li><input type="checkbox" > I know how to provide and access public assets in a composer installation.</li>
+                <li><input type="checkbox" > Also, I know how to update the autoloader data for non-Composer installations.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">JavaScript handling in the Backend</span>
+              <!-- <p>This skill covers the TYPO3-specific parts of RequireJS: how this library is used in TYPO3 and how developers can leverage the TYPO3 Core API to use their own JavaScript code in the TYPO3 Backend.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to write JS code that is compatible with the TYPO3 backend.</li>
+                <li><input type="checkbox" > I know how to load my JS code via the PageRenderer.</li>
+                <li><input type="checkbox" > I know how to register custom JS namespaces in my extension.</li>
+                <li><input type="checkbox" > I can include and use third-party JS modules in my extension’s JS code.</li>
+                <li><input type="checkbox" > I know how to migrate legacy RequireJS modules to the ES6-based.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">AJAX handling in the TYPO3 Backend</span>
+              <!-- <p>Basic knowledge about how AJAX actions are handled in the TYPO3 Backend and how custom code can be added to be called via AJAX.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can register routes for backend AJAX calls.</li>
+                <li><input type="checkbox" > I know how to process incoming AJAX requests in PHP.</li>
+                <li><input type="checkbox" > I can execute AJAX requests in JavaScript.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Implementing upgrade wizards</span>
+              <!-- <p>This skill covers the implementation of upgrade wizards, which can be used by integrators to update existing extension data and configuration after upgrading the extension.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can implement an update wizard and know when to use it.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">PHP autoloading standards</span>
+              <!-- <p>The different PHP autoloading standards (PSR-4, class maps), how they map PHP classes to files and folders, and how the PSR-4 autoloading is configured.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know where to place the class file for a certain class in a certain namespace when using PSR-4 autoloading.</li>
+                <li><input type="checkbox" > I can set up a proper PSR-4 autoloading configuration.</li>
+                <li><input type="checkbox" > I know how to debug and solve problems related to autoloading.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Making Extensions localizable</span>
+              <!-- <p>How to make extensions translatable and localizable.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know conventions for language file names and file paths in TYPO3.</li>
+                <li><input type="checkbox" > I know the basics of the translation concept of TYPO3.</li>
+                <li><input type="checkbox" > I can translate labels in Fluid (f:translate ViewHelper).</li>
+                <li><input type="checkbox" > I can provide translatable TCA and Flexform labels.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="up-list">
+        <li><span class="caret"><strong class="part">5. Software Quality</strong></span>
+          <ul class="nested">
+            <li><input type="checkbox" > <span class="caret">Coding Standards in TYPO3</span>
+              <!-- <p>Knowing how to write code conforming to the coding standards used by the TYPO3 project.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I am familiar with the PSR standard and the usage in TYPO3</li>
+                <li><input type="checkbox" > I know the TYPO3 namespace conventions</li>
+                <li><input type="checkbox" > I know the official TYPO3 coding guidelines for PHP, JavaScript, etc</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Docblocks in PHP</span>
+              <!-- <p>The syntax and general purpose of documentation blocks, and the most often used annotations.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how PHPDoc blocks look and I know the general purpose and limitations</li>
+                <li><input type="checkbox" > I can write valid annotations</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Performance analysis for custom code</span>
+              <!-- <p>This skill covers the process of analysing performance of a TYPO3 system.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know common performance metrics</li>
+                <li><input type="checkbox" > I know how to analyze the performance of a TYPO3 site</li>
+                <li><input type="checkbox" > I know how to analyze the performance of my custom plugins</li>
+                <li><input type="checkbox" > I know where to get a first overview of the rendering performance</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">PHP Code Style Tools</span>
+              <!-- <p>This skill covers tools for automatic code formatting in PHP.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know about standard tools for code formatting in PHP</li>
+                <li><input type="checkbox" > I know how to use the tools</li>
+                <li><input type="checkbox" > I know how to integrate the tools into workflows like CI Pipelines</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Static code analysis</span>
+              <!-- <p>Developing and maintaining large code bases can be cumbersome. Tools providing static code analysis can help.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what static code analysis is and why it is useful</li>
+                <li><input type="checkbox" > I know how to integrate static analysis tools into workflows</li>
+                <li><input type="checkbox" > I know some popular and widely used static analysis tools for PHP</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="up-list">
+        <li><span class="caret"><strong class="part">6. Building Plugins/Modules with Extbase</strong></span>
+          <ul class="nested">
+            <li><input type="checkbox" > <span class="caret">Implementing MVC in TYPO3</span>
+              <!-- <p>Introducing the concept of MVC in Extbase: base classes for models, controllers, repositories; the concept of services and utilities and when to use them.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know which kinds of models exist in Extbase.</li>
+                <li><input type="checkbox" > I know how a repository for a model is implemented.</li>
+                <li><input type="checkbox" > I know how plugins relate to controllers and actions.</li>
+                <li><input type="checkbox" > I know how TYPO3/Extbase determines a template for a controller action.</li>
+                <li><input type="checkbox" > I can create a new plugin with one or multiple controllers.</li>
+                <li><input type="checkbox" > I can define templates for my controller actions.</li>
+                <li><input type="checkbox" > I can create a model and the related repository.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Implementing ViewHelpers</span>
+              <!-- <p>Provides the foundations for using custom PHP code in a Fluid-based view.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know which base classes for ViewHelpers exist.</li>
+                <li><input type="checkbox" > I know which functionality should be placed in a ViewHelper and what is better suited for a controller, service or utility.</li>
+                <li><input type="checkbox" > I can create my own ViewHelpers and use them in a template.</li>
+                <li><input type="checkbox" > I can register custom ViewHelper arguments.</li>
+                <li><input type="checkbox" > I can implement a custom conditional ViewHelper.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Extbase Request/Response</span>
+              <!-- <p>How requests are handled by Extbase.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how an Extbase request relates to the TYPO3 page rendering process.</li>
+                <li><input type="checkbox" > I know how Extbase namespaces its arguments.</li>
+                <li><input type="checkbox" > I know the difference between forwards and redirects.</li>
+                <li><input type="checkbox" > I can extract arguments from the request data.</li>
+                <li><input type="checkbox" > I can add custom data to a response in my controller actions.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Extbase View</span>
+              <!-- <p>Explaining the view part of MVC in Extbase.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how data is passed to the view.</li>
+                <li><input type="checkbox" > I know how a view is configured in a controller.</li>
+                <li><input type="checkbox" > I know how different types of views can be used.</li>
+                <li><input type="checkbox" > I can pass variables to my template.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Extending Base Models</span>
+              <!-- <p>This skill covers the use cases and different ways to extend the built-in models of Extbase.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know which models are shipped with Extbase by default.</li>
+                <li><input type="checkbox" > I know when to use which default model as a base for own models.</li>
+                <li><input type="checkbox" > I know how to map database fields to properties using PHP configuration (fieldName).</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Extbase Persistence</span>
+              <!-- <p>How Extbase interacts with the permanent storage.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how Extbase works when it stores and retrieves persistent data.</li>
+                <li><input type="checkbox" > I know the lifecycle of an object.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Extbase PersistenceManager</span>
+              <!-- <p>The built-in PersistenceManager.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I am familiar with the PersistenceManager class.</li>
+                <li><input type="checkbox" > I know when to use the class to manually trigger I/O operations.</li>
+                <li><input type="checkbox" > I know at what point the PersistenceManager is triggered to automatically persist data.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Standard Extbase Repository</span>
+              <!-- <p>Knowing the default Repository class shipped with Extbase.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know which default query methods are shipped.</li>
+                <li><input type="checkbox" > I know which restrictions apply to queries by default.</li>
+                <li><input type="checkbox" > I know how to create a repository based on the default Repository class</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Customizing Extbase Repositories</span>
+              <!-- <p>How to implement custom persistence functionality in Extbase.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to apply customized query settings to all repository queries.</li>
+                <li><input type="checkbox" > I know how to manipulate query settings for a specific method.</li>
+                <li><input type="checkbox" > I know the difference between Extbase and Doctrine queries.</li>
+                <li><input type="checkbox" > I can create custom queries using the Extbase mechanisms.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Validation in Extbase</span>
+              <!-- <p>What concepts exist to validate controller action input parameters.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know about annotations to validate model properties.</li>
+                <li><input type="checkbox" > I know what input parameter validation is automatically applied to controller actions.</li>
+                <li><input type="checkbox" > I know about annotated validations for controller actions.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Implementing Custom Validators</span>
+              <!-- <p>How to provide custom data validation in Extbase.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know which classes I can use as a base for my validator.</li>
+                <li><input type="checkbox" > I know where to put a custom validator class by convention and how to register the class.</li>
+                <li><input type="checkbox" > I know in which location a custom validator class should be stored by convention and how to register the class.</li>
+                <li><input type="checkbox" > I know how to use the validator in a controller action.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Error Actions</span>
+              <!-- <p>How to handle validation errors.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know about the built-in error action, how it works and when it is used.</li>
+                <li><input type="checkbox" > I know how to provide a custom error action by overriding the default.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Controller</span>
+              <!-- <p>This skill covers controllers, the "C" in the MVC pattern.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know which role controllers play in the pattern.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Extbase Annotations</span>
+              <!-- <p>This skill is about PHPDoc annotations particular to Extbase.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can use the correct Extbase annotations in my models and controllers.</li>
+                <li><input type="checkbox" > I know which annotation I should use when several possible options are available.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Registering Backend Modules</span>
+              <!-- <p>This skill covers the registration of a backend module to make it available to users.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can register backend modules based on Extbase.</li>
+                <li><input type="checkbox" > I can register backend modules without Extbase.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Registering Frontend Plugins</span>
+              <!-- <p>This skill covers the registration of a frontend plugin to make it available to users.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to register a plugin with and without Extbase.</li>
+                <li><input type="checkbox" > I know how to register a plugin/controller as a content element.</li>
+                <li><input type="checkbox" > I know how to declare actions as uncached in Extbase.</li>
+                <li><input type="checkbox" > I know how to register a cached or uncached plugin without Extbase.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">EXTBASEPLUGIN TypoScript Object</span>
+              <!-- <p>This skill covers the integration of Extbase plugins into rendering via TypoScript.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can call an Extbase plugin via an EXTBASEPLUGIN TypoScript cObject.</li>
+                <li><input type="checkbox" > I know how caching works with EXTBASEPLUGIN.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="up-list">
+        <li><span class="caret"><strong class="part">7. Security</strong></span>
+          <ul class="nested">
+            <li>
+              <input type="checkbox"> <span class="caret">Handling User Input: </span> 
+              <!-- <p>Knowledge about possible ways to retrieve and process user input.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to access the arguments and values of a URL.</li>
+                <li><input type="checkbox" > I know how to access data passed into the system from forms.</li>
+                <li><input type="checkbox" > I know how to retrieve data from third-party systems.</li>
+                <li><input type="checkbox" > I know the typical security risks when user input is accessed/processed.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox"> <span class="caret">User Input in DB Queries</span>
+              <!-- <p>Knowledge about securely processing user input for database queries.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what an SQL injection is</li>
+                <li><input type="checkbox" > I know how to sanitize user input to prevent SQL injections</li>
+                <li><input type="checkbox" > I know what other measures to take against SQL injections</li>
+              </ul>
+            </li>
+            <li><input type="checkbox"> <span class="caret">User Input in Views</span>
+              <!-- <p>Knowledge about securely outputting values gained through user input.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what cross-site scripting (XSS) is</li>
+                <li><input type="checkbox" > I know how to prevent user input from triggering XSS</li>
+              </ul>
+            </li>
+            <li><input type="checkbox"> <span class="caret">User Input in PHP Code</span>
+              <!-- <p>Knowledge about securely processing user input in PHP code.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know about vulnerabilities path traversal, arbitrary code execution and information disclosure</li>
+                <li><input type="checkbox" > I can apply mitigations to prevent these vulnerabilities.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox"> <span class="caret">Web Vulnerability Types</span>
+              <!-- <p>Knowledge about possible vulnerabilities in web development.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what cross-site scripting (XSS) is</li>
+                <li><input type="checkbox" > I know what arbitrary code execution is</li>
+                <li><input type="checkbox" > I know what an SQL injection is</li>
+                <li><input type="checkbox" > I know how I can prevent these vulnerabilities in my code</li>
+              </ul>
+            </li>
+            <li><input type="checkbox"> <span class="caret">Prepared Statements</span>
+              <!-- <p>This skill covers the concept of Prepared Statements in relational databases.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what prepared statements are and what their purpose is</li>
+                <li><input type="checkbox" > I know how they improve security and against which attack vectors they  are useful</li>
+              </ul>
+            </li>
+            <li><input type="checkbox"> <span class="caret">Content Security Policy in Extensions</span>
+              <!-- <p>This skill covers the usage and configuration of CSP in TYPO3 Extension.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to configure CSP via PHP</li>
+                <li><input type="checkbox" > I know how to integrate assets in a CSP conform way</li>
+                <li><input type="checkbox" > I know to make use of 3rd Party assets in a CSP conform way</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="up-list">
+        <li><span class="caret"><strong class="part">8. Package Management</strong></span>
+          <ul class="nested">
+            <li>
+              <input type="checkbox" checked> <span class="caret">Composer</span>
+              <!-- <p>Composer basics and its usage for PHP projects.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what Composer is</li>
+                <li><input type="checkbox" > I know the purpose and the structure of file composer.json</li>
+                <li><input type="checkbox" > I know what composer.lock is and which purpose it serves</li>
+                <li><input type="checkbox" > I know the difference between the install and the update command</li>
+                <li><input type="checkbox" > I can create a new Composer project</li>
+                <li><input type="checkbox" > I can specify requirements for my project</li>
+                <li><input type="checkbox" checked> I can install packages using Composer</li>
+                <li><input type="checkbox" checked> I can update packages</li>
+                <li><input type="checkbox" checked> I can remove packages</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="up-list">
+        <li><span class="caret"><strong class="part">9. Server Management</strong></span>
+          <ul class="nested">
+            <li>
+              <input type="checkbox" checked> <span class="caret"> Git basics</span>
+              <!-- <p>Basics and most important commands for working with the version-control system Git.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" checked> I know what a VCS is</li>
+                <li><input type="checkbox" checked> I know what a branch is</li>
+                <li><input type="checkbox" checked> I know what a tag is</li>
+                <li><input type="checkbox" checked> I know what a repository is</li>
+                <li><input type="checkbox" checked> I know what a merge is</li>
+                <li><input type="checkbox" checked> I can initialize a Git repository</li>
+                <li><input type="checkbox" checked> I can execute commands "commit", "push" and "pull"</li>
+                <li><input type="checkbox" checked> I can create a branch and work on it</li>
+                <li><input type="checkbox" checked> I can assign a tag to a certain development state</li>
+                <li><input type="checkbox" checked> I can merge code</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
+    
+
   </main>
 
-  <footer></footer>
+  <div class="footer">
+    <p>by Murat Yaşar, 2024</p>
+  </div>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" ></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" ></script>
-  <script src="/js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
