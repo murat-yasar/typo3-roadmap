@@ -319,8 +319,143 @@
         </li>
       </ul>
       <ul class="up-list">
-        <li><span class="caret"><strong class="part">3. TypoScript</strong> 18</span>
+        <li><span class="caret"><strong class="part">3. TypoScript</strong></span>
           <ul class="nested">
+            <li><input type="checkbox" > <span class="caret">TypoScript Recorid</span>
+              <!-- <p>Creating and using TypoScript records, understanding connections between records.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can create TypoScript records.</li>
+                <li><input type="checkbox" > I can integrate TypoScript records on my website and use inheritance for them.</li>
+                <li><input type="checkbox" > I know the difference between the Root TypoScript record and Additional TypoScript records and can choose the correct approach for given scenarios.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">TypoScript Condition</span>
+              <!-- <p>Using TypoScript conditions in concrete scenarios.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to compare values with TSFE variables.</li>
+                <li><input type="checkbox" > I know how to compare with values from data records (e.g. be_layouts).</li>
+                <li><input type="checkbox" > I know how to compare values from global variables (e.g. hostname).</li>
+                <li><input type="checkbox" > I know how to compare values from the current session</li>
+                <li><input type="checkbox" > I know how to compare values from the site configuration</li>
+                <li><input type="checkbox" > I know, now the symfony expression language has been implemented.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">TypoScript Constants</span>
+              <!-- <p>Setting and using constants in TypoScript.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what TypoScript constants are and how they are defined.</li>
+                <li><input type="checkbox" > I can use TypoScript constants in my templates.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">TypoScript OptionSplit</span>
+              <!-- <p>Option split basics, overview of all seven option split rules.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know the TypoScript option split ruleset.</li>
+                <li><input type="checkbox" > I can use option split in a meaningful way (e.g. for menus).</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">TypoScript Wraps</span>
+              <p>Using TypoScript wraps in order to manipulate data.</p>
+              <ul class="nested">
+                <li><input type="checkbox" > I know which wrap functions are available, what they do, and how they are used, e.g. stdWrap, innerWrap, outerWrap, dataWrap, noTrimWrap and others.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">TypoScript TLOs and Reserved Names</span>
+              <!-- <p>Top-Level Object (TLO) overview, special TLOs like temp, commonly used configuration directives in regard to TLOs.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what Top-Level Objects are.</li>
+                <li><input type="checkbox" > I can give examples for Top-Level Objects and according configuration.</li>
+                <li><input type="checkbox" > I can configure Top-Level Objects with TypoScript to change common configuration in regard to a website.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">TypoScript Menus</span>
+              <!-- <p>Generation of hierarchical menus with TypoScript, using item states (CUR, SPC, etc.).</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can create hierarchical menus with multiple levels with TypoScript.</li>
+                <li><input type="checkbox" > I can create item states for menu elements and assign them (CUR, SPC, etc.).</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Page TSconfig</span>
+              <!-- <p>Basics of page-specific TypoScript in the backend.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what Page TSconfig is and what the difference to TypoScript in frontend templates is.</li>
+                <li><input type="checkbox" > I know basics of which settings can be made with the help of Page TSconfig.</li>
+                <li><input type="checkbox" > I can give basic examples for Page TSconfig and generate practical examples.</li>
+                <li><input type="checkbox" > I know where TYPO3 12 looks by default for a file for Page TSconfig inside a sitepackage extension.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">TypoScript Fluid Template Object</span>
+              <!-- <p>TypoScript knowledge for using basic Fluid templates.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how I can use Fluid for frontend templating.</li>
+                <li><input type="checkbox" > I know how to pass variables and objects to Fluid frontend templates from TypoScript.</li>
+                <li><input type="checkbox" > I know that data can be modified by data processors before being passed to the Fluid template.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Knowing Data Sources</span>
+              <!-- <p>What data sources are available to access in TypoScript.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know what data sources are available (like global objects, data records, global variables).</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Accessing Data Sources</span>
+              <!-- <p>Using available data sources in TypoScript.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know how to retrieve values from the available data sources, e.g. the current page-id</li>
+                <li><input type="checkbox" > I know the currently logged in FE user.</li>
+                <li><input type="checkbox" > I know a field value from a data record.</li>
+                <li><input type="checkbox" > I know the properties of "data/getText"</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">TLOs Temp and Lib</span>
+              <!-- <p>Difference between TypoScript TLOs temp and lib, what the main difference is.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know the caching behaviour for temp versus other TLOs.</li>
+                <li><input type="checkbox" > I can choose the fitting TLO for certain scenarios.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">TypoScript TLO Config</span>
+              <!-- <p>Using the TypoScript TLO config to define behaviour of the instance in terms of FE output.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I know some properties of config and their purpose.</li>
+                <li><input type="checkbox" > I can define cache settings and additional headers.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">TypoScript Syntax & Basics</span>
+              <!-- <p>TypoScript basic knowledge and syntax.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can explain what TypoScript is.</li>
+                <li><input type="checkbox" > I can include TypoScript inside TYPO3 so it affects the behaviour of the site.</li>
+                <li><input type="checkbox" > I can assign values.</li>
+                <li><input type="checkbox" > I know the difference between referencing and copying and can apply these techniques to fitting scenarios.</li>
+                <li><input type="checkbox" > I know the syntax (like comments and brackets).</li>
+                <li><input type="checkbox" > I know the difference between functions, objects and properties and can apply this knowledge to different scenarios.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Image Generation / Manipulation with TypoScript</span>
+              <!-- <p>Image creation, image manipulation and integration of fonts with TypoScript.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can create images with TypoScript.</li>
+                <li><input type="checkbox" > I can manipulate existing images with TypoScript.</li>
+                <li><input type="checkbox" > I can include text and specific fonts in images with TypoScript.</li>
+                <li><input type="checkbox" > I can access crop variants and take them into account.</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">TypoScript Language Menus</span>
+              <!-- <p>Creating a selection menu for different languages on your website using TypoScript.</p> -->
+              <ul class="nested">
+                <li><input type="checkbox" > I can create a language menu for the frontend with the help of TypoScript</li>
+              </ul>
+            </li>
+            <li><input type="checkbox" > <span class="caret">Topic</span>
+              <p>description</p>
+              <ul class="nested">
+                <li><input type="checkbox" > Item</li>
+                <li><input type="checkbox" > Item</li>
+                <li><input type="checkbox" > Item</li>
+                <li><input type="checkbox" > Item</li>
+              </ul>
+            </li>
             <li><input type="checkbox" > <span class="caret">Topic</span>
               <p>description</p>
               <ul class="nested">
@@ -1038,7 +1173,6 @@
           </ul>
         </li>
       </ul>
-
       <ul class="up-list">
         <li><span class="caret"><strong class="part">2. Templating and Other Outputs</strong></span>
           <ul class="nested">
@@ -1198,7 +1332,6 @@
           </ul>
         </li>
       </ul>
-
       <ul class="up-list">
         <li><span class="caret"><strong class="part">3. Care Architecture & APIs</strong></span>
           <ul class="nested">
@@ -1708,7 +1841,6 @@
           </ul>
         </li>
       </ul>
-
       <ul class="up-list">
         <li><span class="caret"><strong class="part">4. General Extension Architecture</strong></span>
           <ul class="nested">
@@ -1811,7 +1943,6 @@
           </ul>
         </li>
       </ul>
-
       <ul class="up-list">
         <li><span class="caret"><strong class="part">5. Software Quality</strong></span>
           <ul class="nested">
@@ -1858,7 +1989,6 @@
           </ul>
         </li>
       </ul>
-
       <ul class="up-list">
         <li><span class="caret"><strong class="part">6. Building Plugins/Modules with Extbase</strong></span>
           <ul class="nested">
@@ -2006,12 +2136,10 @@
           </ul>
         </li>
       </ul>
-
       <ul class="up-list">
         <li><span class="caret"><strong class="part">7. Security</strong></span>
           <ul class="nested">
-            <li>
-              <input type="checkbox"> <span class="caret">Handling User Input: </span> 
+            <li><input type="checkbox"> <span class="caret">Handling User Input: </span> 
               <!-- <p>Knowledge about possible ways to retrieve and process user input.</p> -->
               <ul class="nested">
                 <li><input type="checkbox" > I know how to access the arguments and values of a URL.</li>
@@ -2069,12 +2197,10 @@
           </ul>
         </li>
       </ul>
-
       <ul class="up-list">
         <li><span class="caret"><strong class="part">8. Package Management</strong></span>
           <ul class="nested">
-            <li>
-              <input type="checkbox" checked> <span class="caret">Composer</span>
+            <li><input type="checkbox" checked> <span class="caret">Composer</span>
               <!-- <p>Composer basics and its usage for PHP projects.</p> -->
               <ul class="nested">
                 <li><input type="checkbox" > I know what Composer is</li>
@@ -2091,7 +2217,6 @@
           </ul>
         </li>
       </ul>
-
       <ul class="up-list">
         <li><span class="caret"><strong class="part">9. Server Management</strong></span>
           <ul class="nested">
