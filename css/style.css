@@ -140,18 +140,25 @@ h1 {
 strong.part {
   font-size: x-large;
 }
-strong.part {
-  font-size: larger;
+.topic {
+  font-weight: bold;
+  font-size: large;
 }
 ul.nested > p {
   padding: 0;
   margin: 0;
 }
+
+.seperator {
+  padding: 20px;
+}
 /********** MAIN END **********/
 
 /********** FOOTER **********/
 .footer {
-  margin: 0;
+  bottom: 0;
+  overflow: hidden;
+  position: fixed;
   padding: 15px 0 5px 0;
   width: 100%;
   background-color: #000;
@@ -160,3 +167,5 @@ ul.nested > p {
   font-size: 15px;
 }
 /********** FOOTER END **********/
+
+
