@@ -8,10 +8,16 @@
 h1, h2, i {
   color: #f80;
 }
+a.source-link>i {
+  color: #00f;
+}
 /********** NAVBAR **********/
 #typo3-link {
   height: 16px;
   width: auto;
+}
+.source-link {
+  font-size: 12px;
 }
 /* Add a black background color to the top navigation */
 .topnav {
@@ -160,12 +166,12 @@ ul.nested > p {
 
 /** Hidden Description **/
 .key {
-  color: #0000ff;
-  font-size: 16px;
+  color: #f80;
+  font-size: 12px;
 }
 .key:hover + .hide {
   display: block;
-  color: #0000ff;
+  color: #f80;
 }
 .hide {
   display: none;

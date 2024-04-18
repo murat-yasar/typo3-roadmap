@@ -31,13 +31,9 @@
 
   <header></header>
 
-  <!-- <i class="material-icons key" >announcement</i>
-  <span class="hide">Text</span>  -->
-  
-  <main>
-<!-- 
+  <!-- 
     <ul class="up-list">
-      <li><span class="caret"><strong class="part">1. TYPO3 Basics</strong></span>
+      <li><span class="caret"><strong class="part">1. Section</strong></span>
         <ul class="nested">
           <li><input type="checkbox"> <span class="caret topic">Topic</span>
             <ul class="nested">
@@ -46,17 +42,22 @@
           </li>
         </ul>
       </li>
-    </ul> -->
+    </ul>
+    
+    <a class="source-link" target="_blank" href="link"><i class="fa fa-globe" ></i></a>
 
-
+    <i class="material-icons key" >announcement</i><span class="hide">Text</span>
+  -->
+  
+  <main>
     <div id="Home" class="tabcontent">
       <span onclick="this.parentElement.style.display='active'" class="close">&times</span>
       <h2><i class="fa fa-map" ></i> TYPO3 Roadmap</h2>
-
       <ul class="up-list">
         <li><span class="caret"><strong class="part">1. Getting Started</strong></span>
           <ul class="nested">
             <li><input type="checkbox"> <span class="caret topic">1. TYPO3 Concepts</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-getting-started/12.4/en-us/Concepts/Index.html"><i class="fa fa-globe" ></i></a>
               <ul class="nested">
                 <li><input type="checkbox"> Backend & Frontend</li>
                 <li><input type="checkbox"> TYPO3 Backend</li>
@@ -68,48 +69,527 @@
               </ul>
             </li>
             <li><input type="checkbox"> <span class="caret topic">2. System Requirements</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-getting-started/12.4/en-us/SystemRequirements/Index.html"><i class="fa fa-globe" ></i></a>
               <ul class="nested">
-                <li><input type="checkbox"> Item</li>
+                <li><input type="checkbox"> PHP</li>
+                <li><input type="checkbox"> Web Server</li>
+                <li><input type="checkbox"> Database</li>
+                <li><input type="checkbox"> Composer</li>
               </ul>
             </li>
             <li><input type="checkbox"> <span class="caret topic">3. Installation</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-getting-started/12.4/en-us/SystemRequirements/Index.html"><i class="fa fa-globe" ></i></a>
               <ul class="nested">
-                <li><input type="checkbox"> Item</li>
+                <li><input type="checkbox"> Installing TYPO3
+                  <i class="material-icons key" >announcement</i><span class="hide">The Installation Guide covers everything needed to install TYPO3. Including a preinstallation checklist and a detailed walk through that details every step of the installation process.</span>
+                </li>
+                <li><input type="checkbox"> Installing TYPO3 with DDEV
+                  <i class="material-icons key" >announcement</i><span class="hide">This is a step-by-step guide detailing how to install TYPO3 using DDEV, Docker and Composer.</span>
+                </li>
+                <li><input type="checkbox"> Deploying TYPO3
+                  <i class="material-icons key" >announcement</i><span class="hide">The deployment guide highlights some of solutions available that can help automate the process of deploying TYPO3 to a remote server.</span>
+                </li>
+                <li><input type="checkbox"> Tuning TYPO3
+                  <i class="material-icons key" >announcement</i><span class="hide">This chapter contains information on how to configure and optimize the infrastructure running TYPO3.</span>
+                </li>
+                <li><input type="checkbox"> TYPO3 Release Integrity
+                  <i class="material-icons key" >announcement</i><span class="hide">Text</span>
+                </li>
               </ul>
             </li>
             <li><input type="checkbox"> <span class="caret topic">4. Setup</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-getting-started/12.4/en-us/Setup/Index.html"><i class="fa fa-globe" ></i></a>
               <ul class="nested">
-                <li><input type="checkbox"> Item</li>
+                <li><input type="checkbox"> Creating a Site Record
+                  <i class="material-icons key" >announcement</i>
+                  <span class="hide">Once TYPO3 is installed, the default Site record needs to be configured before content and templates can be added.</span>
+                </li>
+                <li><input type="checkbox"> Adding Backend Users
+                  <i class="material-icons key" >announcement</i>
+                  <span class="hide">Create additional backend users that will have access to TYPO3's backend interface.</span>
+                </li>
+                <li><input type="checkbox"> Changing the Backend Language
+                  <i class="material-icons key" >announcement</i>
+                  <span class="hide">Setup additional backend languages in TYPO3 allowing users to select an alternative language to use in the backend.</span>
+                </li>
               </ul>
             </li>
             <li><input type="checkbox"> <span class="caret topic">5. Troubleshooting</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-getting-started/12.4/en-us/Troubleshooting/Index.html"><i class="fa fa-globe" ></i></a>
               <ul class="nested">
-                <li><input type="checkbox"> Item</li>
+                <li><input type="checkbox"> TYPO3</li>
+                <li><input type="checkbox"> System Modules</li>
+                <li><input type="checkbox"> PHP</li>
+                <li><input type="checkbox"> Web Server</li>
+                <li><input type="checkbox"> Database</li>
               </ul>
             </li>
             <li><input type="checkbox"> <span class="caret topic">6. Managing Backend Users</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-getting-started/12.4/en-us/UserManagement/Index.html"><i class="fa fa-globe" ></i></a>
               <ul class="nested">
-                <li><input type="checkbox"> Item</li>
+                <li><input type="checkbox"> Backend Privileges</li>
+                <li><input type="checkbox"> Backend Users</li>
+                <li><input type="checkbox"> Groups</li>
+                <li><input type="checkbox"> User Permissions</li>
+                <li><input type="checkbox"> Page Permissions</li>
+                <li><input type="checkbox"> Setting up a User</li>
               </ul>
             </li>
-            <li><input type="checkbox"> <span class="caret topic">7. Working with Extensions</span>
+            <li><input type="checkbox"> <span class="caret topic">7. Permissions Management</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/PermissionsManagement/Index.html"><i class="fa fa-globe" ></i></a>
               <ul class="nested">
-                <li><input type="checkbox"> Item</li>
+                <li><input type="checkbox"> General recommendations</li>
+                <li><input type="checkbox"> Setting up backend user groups</li>
+                <li><input type="checkbox"> Example configuration of backend user groups</li>
+                <li><input type="checkbox"> Permissions synchronization</li>
+                <li><input type="checkbox"> Groups inheritance</li>
               </ul>
             </li>
-            <li><input type="checkbox"> <span class="caret topic">8. Introduction Package</span>
+            <li><input type="checkbox"> <span class="caret topic">8. Working with Extensions</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-getting-started/12.4/en-us/Extensions/Index.html"><i class="fa fa-globe" ></i></a>
               <ul class="nested">
-                <li><input type="checkbox"> Item</li>
+                <li><input type="checkbox"> Managing Extensions
+                  <i class="material-icons key" >announcement</i><span class="hide">Information on how to find, install and manage extensions using Composer.</span>
+                </li>
+                <li><input type="checkbox"> Installing Local Extensions
+                  <i class="material-icons key" >announcement</i><span class="hide">Information on how to install local extensions including sitepackages and custom extensions using Composer.</span>
+                </li>
               </ul>
             </li>
-            <li><input type="checkbox"> <span class="caret topic">9. Next Steps</span>
+            <li><input type="checkbox"> <span class="caret topic">9. Introduction Package</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/IntroductionPackage/Index.html"><i class="fa fa-globe" ></i></a>
+            </li>
+            <li><input type="checkbox"> <span class="caret topic">10. Next Steps</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/NextSteps/Index.html"><i class="fa fa-globe" ></i></a>
               <ul class="nested">
-                <li><input type="checkbox"> Item</li>
+                <li><input type="checkbox"> TYPO3 Editors Guide
+                  <a class="source-link" target="_blank" href="link"><i class="fa fa-globe" ></i></a>
+                </li>
+                <li><input type="checkbox"> TYPO3 Sitepackage Tutorial
+                  <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/Index.html"><i class="fa fa-globe" ></i></a>
+                </li>
+                <li><input type="checkbox"> TYPO3 Explained
+                  <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/Index.html"><i class="fa fa-globe" ></i></a>
+                </li>
+                <li><input type="checkbox"> Official TYPO3 Training Courses
+                  <a class="source-link" target="_blank" href="https://typo3.com/services/official-typo3-training-courses"><i class="fa fa-globe" ></i></a>
+                </li>
               </ul>
             </li>
           </ul>
         </li>
       </ul>
+      <ul class="up-list">
+        <li><span class="caret"><strong class="part">2. Creating & Managing Content</strong></span>
+          <ul class="nested">
+            <li><input type="checkbox"> <span class="caret topic">1. TYPO3 Editors Guide</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Index.html"><i class="fa fa-globe" ></i></a>
+              <ul class="nested">
+                <li><input type="checkbox"> Logging in to TYPO3 Backend
+                  <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Login/Index.html"><i class="fa fa-globe" ></i></a>
+                </li>
+                <li><input type="checkbox"> <span class="caret">Pages</span>
+                  <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Pages/Index.html"><i class="fa fa-globe" ></i></a>
+                  <ul class="nested">
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Pages/CreatingPages/Index.html#pages-creating">Creating Pages</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">Creating pages is one of the first things you will do with your new TYPO3 installation. This chapter contains information on how to create pages and arrange them in the page tree.</span>
+                    </li>
+                    <li><input type="checkbox">  <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Pages/AddingMultiple/Index.html">Creating Multiple Pages</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">TYPO3 has a built-in feature that allows multiple pages to be created at once, making it easier to get started with larger projects. This chapter contains information on how to use this tool.</span>
+                    </li>
+                    <li><input type="checkbox">  <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Pages/WorkingWithPages/Index.html">Working With Pages</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">This chapter contains information on how pages can be moved, copied and deleted in the page tree as well as showing you how to use the filter tool.</span>
+                    </li>
+                    <li><input type="checkbox">  <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Pages/PageTypes/Index.html">Page Types</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">There are a number of different types of pages that can be created in the page tree, including restricted pages and shortcuts to other pages. This chapter contains information about the different types of pages that are available and how they can be used.</span>
+                    </li>
+                    <li><input type="checkbox">  <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Pages/PageProperties/Index.html">Page Properties</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">There are a number of different types of pages that can be created in the page tree, including restricted pages and shortcuts to other pages. This chapter contains information about the different types of pages that are available and how they can be used.</span>
+                    </li>
+                  </ul>
+                </li>
+                <li><input type="checkbox"> <span class="caret">Content Elements</span>
+                  <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/ContentElements/Index.html"><i class="fa fa-globe" ></i></a>
+                  <ul class="nested">
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/ContentElements/CreatingContent/Index.html">Creating Content</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">It's easy to add content to a page in TYPO3. This chapter contains all the information you need to start adding content to your TYPO3 website.</span>
+                    </li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/ContentElements/EditingContent/Index.html">Editing Content</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">Want to change a content element's type? This chapter contains information on how you can change a content element's type while preserving its content.</span>
+                    </li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/ContentElements/Content/Index.html">Working with the Content</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">This chapter contains information on how you can move, copy and cut content. It also has information on the different ways you can view content in the backend.</span>
+                    </li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/ContentElements/RichTextEditor/Index.html">Rich Text Editor</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">We use the rich text editor to add written content. Find out how you can use it to format text and add both internal and external links.</span>
+                    </li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/ContentElements/Images/Index.html">Working With Images</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">Find out how to upload images, resize and add images to a page.</span>
+                    </li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/ContentElements/Media/Index.html">Embedding Video And Audio</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">This chapter contains information on how to embed video and audio files to a page. Including content from YouTube and Vimeo.</span>
+                    </li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/ContentElements/ContactForm/Index.html">Creating A Contact Form</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">Find out how to create a contact form using the step-by-step guide.</span>
+                    </li>
+                  </ul>
+                </li>
+                <li><input type="checkbox"> <span class="caret">Records</span>
+                  <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Index.html"><i class="fa fa-globe" ></i></a>
+                  <ul class="nested">
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/ListModule/UsingEffectively/Index.html#using-the-list-module">Using The List Module</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">The list view displays a list of records stored on the current page, grouped by type.</span>
+                    </li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/ListModule/Clipboard/Index.html">The Clipboard</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">Every time a record is copied in the TYPO3, it appears in the clipboard found at the bottom of the list module screen. Find out how you can move and copy content in the backend.</span>
+                    </li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/ListModule/AdvancedClipboard/Index.html">Advanced Clipboard Usage</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">Find out how to make get the most out of the clipboard with an overview of some its extra features.</span>
+                    </li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/ListModule/MassEditing/Index.html">Mass Editing</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">The List module makes it possible to display the content of several fields at once and gives you the ability edit several records with one action.</span>
+                    </li>
+                  </ul>
+                </li>
+                <li><input type="checkbox"> <span class="caret">Tools for Editors</span>
+                  <ul class="nested">
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/FileModule/Index.html">Files</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">The File > Filelist module is where you can manage all the media associated with your TYPO3 web site.</span>
+                    </li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Languages/Index.html">Working with languages</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">TYPO3 CMS comes with the built-in ability to handle web sites in multiple languages.</span>
+                    </li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/AccessControl/Index.html">Access Control</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">There are many ways to restrict access to pages, content elements and other information in your TYPO3 CMS installation. Options can range from hiding pages in menus, to limiting visibility of content for a set time period, all the way through to requiring visitors to log in to view content.</span>
+                      <ul class="nested">
+                        <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/AccessControl/Visibility/Index.html">Elements Visibility</a>
+                          <i class="material-icons key" >announcement</i>
+                          <span class="hide">When an element is hidden, be it a page, a content element or a news item, it will not display in the frontend. You can, however, preview it in the backend.</span>
+                        </li>
+                        <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/AccessControl/Login/Index.html">Frontend Login</a>
+                          <i class="material-icons key" >announcement</i>
+                          <span class="hide">Find out how to configure content and pages to only be visible to frontend users who have logged in to a restricted area.</span>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/DeepLinking/Index.html">Deep Linking</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">Deep linking allows users to share links to specific pages, content elements and modules from within TYPO3's backend.</span>
+                    </li>
+                  </ul>
+                </li>
+                <li><input type="checkbox"> <span class="caret">Concepts</span>
+                  <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Concepts/Index.html"><i class="fa fa-globe" ></i></a>
+                  <ul class="nested">
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Concepts/Cache.html">Cache</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">A beginners guide to browser caching and managing TYPO3's cache.</span>
+                    </li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Concepts/FileAbstractionLayer.html">File Abstraction Layer (FAL)</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">Information about TYPO3's File Abstraction Layer (FAL) and how editors can modify meta data for individual files.</span>
+                    </li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Concepts/Accessibility.html">Accessibility</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">An introduction to writing accessible content with links to third party resources.</span>
+                    </li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Concepts/Copyright.html">Copyright</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">Information on copyright and data privacy.</span>
+                    </li>
+                  </ul>
+                </li>
+                <li><input type="checkbox"> Help within TYPO3
+                  <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/HelpInside/Index.html"><i class="fa fa-globe" ></i></a>
+                  <ul class="nested">
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/HelpInside/BackendSearch/Index.html">Backend search</a></li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/HelpInside/KeyboardCommands/Index.html">Keyboard commands</a></li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/HelpInside/OnlineDocumentation/Index.html">TYPO3 online documentation</a></li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/HelpInside/Tooltips/Index.html">Tooltips</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><input type="checkbox"> <span class="caret topic">2. Form System Extension</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Index.html"><i class="fa fa-globe" ></i></a>
+              <ul class="nested">
+                <li><input type="checkbox"> Introduction</li>
+                <li><input type="checkbox"> Installation</li>
+                <li><input type="checkbox"> <span class="caret">for Editors</span>
+                  <a class="source-link" target="_blank" href="https://docs.typo3.org/c/typo3/cms-form/main/en-us/E/Index.html"><i class="fa fa-globe" ></i></a>
+                  <ul class="nested">
+                    <li><input type="checkbox"> Introduction</li>
+                    <li><input type="checkbox"> Form elements and their properties</li>
+                    <li><input type="checkbox"> Validators</li>
+                    <li><input type="checkbox"> Finishers</li>
+                    <li><input type="checkbox"> Accessibility</li>
+                    <li><input type="checkbox"> Tutorials
+                      <ul class="nested">
+                        <li><input type="checkbox"><a href="https://docs.typo3.org/c/typo3/cms-form/main/en-us/E/Tutorials/BasicForm/Index.html#create-a-basic-contact-form">Create a basic contact form</a></li>
+                        <li><input type="checkbox"><a href="https://docs.typo3.org/c/typo3/cms-form/main/en-us/E/Tutorials/PhotoContest/Index.html">Create a photo contest form</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><input type="checkbox"> <span class="caret">for Integrators</span>
+                  <a class="source-link" target="_blank" href="https://docs.typo3.org/c/typo3/cms-form/main/en-us/I/Index.html#"><i class="fa fa-globe" ></i></a>
+                  <ul class="nested">
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/c/typo3/cms-form/main/en-us/I/Concepts/Index.html">Concepts</a></li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/c/typo3/cms-form/main/en-us/I/Config/Index.html">Configuration Reference</a></li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/c/typo3/cms-form/main/en-us/I/FAQ/Index.html">FAQ</a></li>
+                  </ul>
+                </li>
+                <li><input type="checkbox"> <span class="caret"></span>for Developers
+                  <a class="source-link" target="_blank" href="https://docs.typo3.org/c/typo3/cms-form/main/en-us/D/Index.html"><i class="fa fa-globe" ></i></a>
+                  <ul class="nested">
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/c/typo3/cms-form/main/en-us/D/FinisherOptions/Index.html#finisher-options">Finisher Options</a></li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/c/typo3/cms-form/main/en-us/D/FormEditor/Index.html">Form editor</a></li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/c/typo3/cms-form/main/en-us/D/FrontendRendering/Index.html">Frontend rendering</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><input type="checkbox"> <span class="caret topic">3. Frontend Localization Guide</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/guide-frontendlocalization/12.4/en-us/Index.html#start"><i class="fa fa-globe" ></i></a>
+              <ul class="nested">
+                <li><input type="checkbox"> Introduction</li>
+                <li><input type="checkbox"> Character sets</li>
+                <li><input type="checkbox"> Setting up languages</li>
+                <li><input type="checkbox"> Translating pages</li>
+                <li><input type="checkbox"> Localization overview</li>
+                <li><input type="checkbox"> Localized content</li>
+                <li><input type="checkbox"> Localized labels</li>
+                <li><input type="checkbox"> Language selection menu</li>
+                <li><input type="checkbox"> Core support for localization</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="up-list">
+        <li><span class="caret"><strong class="part">3. TYPO3 Sitepackage Tutorial</strong></span>
+          <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/Index.html"><i class="fa fa-globe" ></i></a>
+          <ul class="nested">
+            <li><input type="checkbox"> <span class="topic">Introduction</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/Introduction/Index.html"><i class="fa fa-globe" ></i></a>
+            </li>
+            <li><input type="checkbox"> <span class="topic">Minimal example</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/MinimalExample/Index.html"><i class="fa fa-globe" ></i></a>
+            </li>
+            <li><input type="checkbox"> <span class="topic">Design Template</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/DesignTemplate/Index.html"><i class="fa fa-globe" ></i></a>
+            </li>
+            <li><input type="checkbox"> <span class="topic">Fluid Templates</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/FluidTemplates/Index.html"><i class="fa fa-globe" ></i></a>
+            </li>
+            <li><input type="checkbox"> <span class="topic">TypoScript configuration</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/TypoScriptConfiguration/Index.html"><i class="fa fa-globe" ></i></a>
+              <i class="material-icons key" >announcement</i>
+              <span class="hide">TYPO3 uses TypoScript as a specific language to configure a website. TypoScript is a very powerful tool in the TYPO3 universe, because it allows integrators to configure and manipulate almost every aspect of the system and customize a TYPO3 instance to very specific needs of their customers.</span>
+            </li>
+            <li><input type="checkbox"> <span class="topic">Extension Configuration</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/ExtensionConfiguration/Index.html"><i class="fa fa-globe" ></i></a>
+            </li>
+            <li><input type="checkbox"> <span class="topic">Extension installation</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/ExtensionInstallation/Index.html"><i class="fa fa-globe" ></i></a>
+            </li>
+            <li><input type="checkbox"> <span class="topic">Create initial pages</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/CreatePages/Index.html"><i class="fa fa-globe" ></i></a>
+            </li>
+            <li><input type="checkbox"> <span class="topic">Main Menu Creation</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/MainMenuCreation/Index.html"><i class="fa fa-globe" ></i></a>
+            </li>
+            <li><input type="checkbox"> <span class="topic">Content mapping</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/ContentMapping/Index.html"><i class="fa fa-globe" ></i></a>
+            </li>
+            <li><input type="checkbox"> <span class="topic">Summary</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/Summary/Index.html"><i class="fa fa-globe" ></i></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="up-list">
+        <li><span class="caret"><strong class="part">4. TYPO3 Explained</strong></span>
+          <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/Index.html"><i class="fa fa-globe" ></i></a>
+          <ul class="nested">
+            <li><input type="checkbox"> <span class="caret topic">Introduction</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/Introduction/Index.html#introduction-1"><i class="fa fa-globe" ></i></a>
+            </li>
+            <li><input type="checkbox"> <span class="caret topic">TYPO3 APIs</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/Index.html"><i class="fa fa-globe" ></i></a>
+              <ul class="nested">
+                <li><input type="checkbox"> <a href="">Item</a>
+                  <i class="material-icons key" >announcement</i>
+                  <span class="hide">Details</span>
+                </li>
+              </ul>
+            </li>
+            <li><input type="checkbox"> <span class="caret topic">Coding guidelines</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/CodingGuidelines/Index.html"><i class="fa fa-globe" ></i></a>
+              <ul class="nested">
+                <li><input type="checkbox"> <a href="">Item</a>
+                  <i class="material-icons key" >announcement</i>
+                  <span class="hide">Details</span>
+                </li>
+              </ul>
+            </li>
+            <li><input type="checkbox"> <span class="caret topic">Configuration</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/Configuration/Index.html"><i class="fa fa-globe" ></i></a>
+              <ul class="nested">
+                <li><input type="checkbox"> <a href="">Item</a>
+                  <i class="material-icons key" >announcement</i>
+                  <span class="hide">Details</span>
+                </li>
+              </ul>
+            </li>
+            <li><input type="checkbox"> <span class="caret topic">Extension development</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/Index.html"><i class="fa fa-globe" ></i></a>
+              <ul class="nested">
+                <li><input type="checkbox"> <a href="">Concepts</a>
+                  <i class="material-icons key" >announcement</i>
+                  <span class="hide">Learn about the concept of extensions in TYPO3, the difference between system extension and local extensions. Learn about Extbase as an MVC basis for extension development.</span>
+                </li>
+                <li><input type="checkbox"> <a href="">File structure</a>
+                  <i class="material-icons key" >announcement</i>
+                  <span class="hide">Lists reserved file and directory names within and extension. Also lists file names that are used in a certain way by convention.<br>This chapter should also help you to find your way around in extensions and sitepackages that where automatically generated or that you downloaded as an example.</span>
+                </li>
+                <li><input type="checkbox"> <a href="">How To</a>
+                  <i class="material-icons key" >announcement</i>
+                  <span class="hide">Helps you kickstart your own extension or sitepackage. Explains how to publish an extension. Contains howto for different situations like creating a frontend plugin, a backend module or to extend existing TCA.</span>
+                </li>
+                <li><input type="checkbox"> <span class="caret topic">Extbase</span>
+                  <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/Extbase/Index.html"><i class="fa fa-globe" ></i></a>
+                  <i class="material-icons key" >Extbase is an extension framework to create TYPO3 frontend plugins and TYPO3 backend modules.</i>
+                  <span class="hide">Explains</span>
+                  <ul class="nested">
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/Extbase/Introduction/Index.html">Extbase Introduction</a></li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/Extbase/Reference/Index.html">Extbase Referance</a></li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/Extbase/Examples/Index.html">Extbase Examples</a></li>
+                  </ul>
+                </li>
+                <li><input type="checkbox"> <span class="caret topic">Best practises and conventions</span>
+                  <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/BestPractises/Index.html"><i class="fa fa-globe" ></i></a>
+                  <i class="material-icons key" >announcement</i>
+                  <span class="hide">Explains how to pick an extensions key, how things should be named and how to best use configuration files (ext_localconf.php and ext_tables.php)</span>
+                  <ul class="nested">
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/BestPractises/ExtensionKey.html">Choosing an extension key</a></li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/BestPractises/NamingConventions.html">Naming conventions</a></li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/BestPractises/ConfigurationFiles.html">Configuration Files (ext_tables.php & ext_localconf.php)</a></li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/BestPractises/SoftwareDesignPrinciples.html">Software Design Principles</a></li>
+                  </ul>
+                </li>
+                <li><input type="checkbox"> <span class="caret topic">Tutorials</span>
+                  <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/Tutorials/Index.html#extension-tutorials"><i class="fa fa-globe" ></i></a>
+                  <ul class="nested">
+                    <li><input type="checkbox"> <span class="caret topic">Kickstart an extension</span>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">There are different options to kickstart an extension. This chapter offers tutorials for some common methods to kickstart an extension.</span>
+                      <ul class="nested">
+                        <li><input type="checkbox"> <span class="topic">Create an extension from scratch</span>
+                          <i class="material-icons key" >announcement</i>
+                          <span class="hide">
+                            - Create a directory with the extension name<br>
+                            - Create the composer.json file<br>
+                            - Create the ext_emconf.php file for legacy installations and extensions to be uploaded to TER
+                          </span>
+                        </li>
+                        <li><input type="checkbox"> <span class="topic">Kickstart a TYPO3 extension with "Make"</span>
+                          <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/Tutorials/Kickstart/Make/Index.html"><i class="fa fa-globe" ></i></a>
+                          <i class="material-icons key" >announcement</i>
+                          <span class="hide">"Make" can be used to quickly create an extension with a few basic commands on the console. "Make" can also be used to kickstart functionality like console command (CLI), backend controllers and event listeners. It does not offer to kickstart a sitepackage or an Extbase extension.</span>
+                        </li>
+                        <li><input type="checkbox"> <span class="topic">Sitepackage Builder</span>
+                          <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/Tutorials/Kickstart/SitepackageBuilder/Index.html"><i class="fa fa-globe" ></i></a>
+                          <i class="material-icons key" >announcement</i>
+                          <span class="hide">The Sitepackage Builder can be used to conveniently create an extension containing the sitepackage (theme) of a site. It can also be used to kickstart an arbitrary extension by removing unneeded files.</span>
+                        </li>
+                        <li><input type="checkbox"> <span class="topic">Extension Builder</span>
+                          <i class="material-icons key" >announcement</i>
+                          <span class="hide">The Extension Builder helps you to develop a TYPO3 extension based on the domain-driven MVC framework Extbase and the templating engine Fluid.</span>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><input type="checkbox"> <span class="caret topic">Tea in a nutshell</span>
+                      <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/Tutorials/Tea/Index.html"><i class="fa fa-globe" ></i></a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">tea is a simple, well-tested extension based on Extbase.<br>This tutorial guides you through the different files, configuration formats and PHP classes needed for an Extbase extension. Automatic tests are not covered in this tutorial. Refer to the extensions manual for this topic.</span>
+                      <ul class="nested">
+                        <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/Tutorials/Tea/ExtensionConfiguration.html#create-an-extension">Create an extension</a></li>
+                        <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/Tutorials/Tea/DirectoryStructure.html">Create a directory structure</a></li>
+                        <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/Tutorials/Tea/Model.html">Model: a bag of tea</a></li>
+                        <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/Tutorials/Tea/Repository.html">Repository</a></li>
+                        <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/Tutorials/Tea/Controller.html">Controller</a></li>
+                      </ul>
+                    </li>
+                    <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/Tutorials/Extbase.html">Extension development with extbase</a>
+                      <i class="material-icons key" >announcement</i>
+                      <span class="hide">Extension Development with Extbase, a video from the TYPO3 Developer Days 2019</span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><input type="checkbox"> <span class="caret topic">Security guidelines</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/Security/Index.html"><i class="fa fa-globe" ></i></a>
+              <ul class="nested">
+                <li><input type="checkbox"> <a href="">Item</a>
+                  <i class="material-icons key" >announcement</i>
+                  <span class="hide">Details</span>
+                </li>
+              </ul>
+            </li>
+            <li><input type="checkbox"> <span class="caret topic">Testing</span>
+              <a class="source-link" target="_blank" href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/Testing/Index.html"><i class="fa fa-globe" ></i></a>
+              <ul class="nested">
+                <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/Testing/CoreTesting.html#core-testing">Core testing</a>
+                </li>
+                <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/Testing/ExtensionTesting.html">Extension testing</a>
+                  <i class="material-icons key" >announcement</i>
+                  <span class="hide">Details</span>
+                </li>
+                <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/Testing/ProjectTesting.html">Project testing</a>
+                  <i class="material-icons key" >announcement</i>
+                  <span class="hide">Details</span>
+                </li>
+                <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/Testing/WritingUnit.html">Writing unit tests</a>
+                  <i class="material-icons key" >announcement</i>
+                  <span class="hide">Details</span>
+                </li>
+                <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/Testing/WritingFunctional.html">Writing functional tests</a>
+                  <i class="material-icons key" >announcement</i>
+                  <span class="hide">Details</span>
+                </li>
+                <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/Testing/WritingAcceptance.html">Writing acceptance tests</a>
+                  <i class="material-icons key" >announcement</i>
+                  <span class="hide">Acceptance testing in TYPO3 world is about piloting a browser to click through a frontend generated by TYPO3 or clicking through scenarios in the TYPO3 backend.</span>
+                </li>
+                <li><input type="checkbox"> <a href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/Testing/Faq.html">FAQ</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
     </div>
 
     <div id="Editor" class="tabcontent">
