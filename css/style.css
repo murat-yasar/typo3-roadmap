@@ -152,7 +152,23 @@ ul.nested > p {
 .seperator {
   padding: 20px;
 }
-/********** MAIN END **********/
+
+/** Hidden Description **/
+.key {
+  color: #0000ff;
+  font-size: 16px;
+}
+.key:hover + .hide {
+  display: block;
+  color: #0000ff;
+}
+.hide {
+  display: none;
+}
+
+/** Collapsible */
+
+/******** MAIN END **********/
 
 /********** FOOTER **********/
 .footer {
