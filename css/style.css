@@ -5,12 +5,14 @@
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
-  margin-top: 10px;
-  text-align: center;
+h1, h2, i {
+  color: #f80;
 }
-
 /********** NAVBAR **********/
+#typo3-link {
+  height: 16px;
+  width: auto;
+}
 /* Add a black background color to the top navigation */
 .topnav {
   position: fixed;
@@ -75,7 +77,7 @@ h1 {
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 75px 15px 0 10px;
+  padding: 60px 15px 0 10px;
   border: 1px solid #ccc;
   border-top: none;
   animation: fadeEffect 1s; /* Fading effect takes 1 second */
@@ -95,6 +97,9 @@ h1 {
   to {opacity: 1;}
 }
 /********** NAVBAR END **********/
+
+/********** HEAD **********/
+/********** HEAD END **********/
 
 /********** MAIN **********/
  /* Remove default bullets */
@@ -140,18 +145,41 @@ h1 {
 strong.part {
   font-size: x-large;
 }
-strong.part {
-  font-size: larger;
+.topic {
+  font-weight: bold;
+  font-size: large;
 }
 ul.nested > p {
   padding: 0;
   margin: 0;
 }
-/********** MAIN END **********/
+
+.seperator {
+  padding: 20px;
+}
+
+/** Hidden Description **/
+.key {
+  color: #0000ff;
+  font-size: 16px;
+}
+.key:hover + .hide {
+  display: block;
+  color: #0000ff;
+}
+.hide {
+  display: none;
+}
+
+/** Collapsible */
+
+/******** MAIN END **********/
 
 /********** FOOTER **********/
 .footer {
-  margin: 0;
+  bottom: 0;
+  overflow: hidden;
+  position: fixed;
   padding: 15px 0 5px 0;
   width: 100%;
   background-color: #000;
@@ -160,3 +188,5 @@ ul.nested > p {
   font-size: 15px;
 }
 /********** FOOTER END **********/
+
+
