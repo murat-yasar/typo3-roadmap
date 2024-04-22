@@ -1,8 +1,9 @@
 # TYPO3 Developer Roadmap
 
-1. **Web Development**
-2. **PHP**
-3. **TYPO3**
+1. **HTML & CSS**
+2. **JavaScript**
+3. **PHP**
+4. **TYPO3**
    1. **TYPO3 Fundamentals**
       - **Understand TYPO3 Architecture and Concepts**
         - [TYPO3 Official Documentation](https://docs.typo3.org/)
