@@ -108,8 +108,12 @@ a.source-link>i {
 /********** HEAD END **********/
 
 /********** MAIN **********/
- /* Remove default bullets */
- ul {
+main {
+  margin-bottom: 60px;
+}
+
+/* Remove default bullets */
+ul {
   list-style-type: none;
 }
 
