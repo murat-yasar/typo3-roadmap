@@ -18,7 +18,7 @@ a.source-link>i {
   width: auto;
 }
 .source-link {
-  font-size: 12px;
+  font-size: larger;
 }
 /* Add a black background color to the top navigation */
 .topnav {
