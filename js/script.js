@@ -1,3 +1,21 @@
+function init(){
+  // Caret Script
+  var toggler = document.getElementsByClassName("caret");
+  var i;
+
+  for (i = 0; i < toggler.length; i++) {
+    toggler[i].addEventListener("click", function() {
+      this.parentElement.querySelector(".nested").classList.toggle("active");
+      this.classList.toggle("caret-down");
+    });
+  }
+
+  // Half-Checked Script
+  const inputs = document.getElementsByClassName("half-check");
+  for (let i = 0; i < inputs.length; i++) inputs[i].indeterminate = true;
+  
+}
+
 function openRoad(evt, roadName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -22,20 +40,4 @@ function navbarCollapse() {
   }
 } 
 
-
-var toggler = document.getElementsByClassName("caret");
-var i;
-
-for (i = 0; i < toggler.length; i++) {
-  toggler[i].addEventListener("click", function() {
-    this.parentElement.querySelector(".nested").classList.toggle("active");
-    this.classList.toggle("caret-down");
-  });
-} 
-
-
-const inputs = document.getElementsByClassName("half-check");
-
-for (let i = 0; i < inputs.length; i++) {
-  inputs[i].indeterminate = true;
-}
+init();
