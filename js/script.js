@@ -34,3 +34,8 @@ for (i = 0; i < toggler.length; i++) {
 } 
 
 
+const inputs = document.getElementsByClassName("half-check");
+
+for (let i = 0; i < inputs.length; i++) {
+  inputs[i].indeterminate = true;
+}
