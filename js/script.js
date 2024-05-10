@@ -11,7 +11,7 @@ function init(){
   }
 
   // Half-Checked Script
-  const inputs = document.getElementsByClassName("half-check");
+  const inputs = document.getElementsByClassName("half-checked");
   for (let i = 0; i < inputs.length; i++) inputs[i].indeterminate = true;
   
 }
